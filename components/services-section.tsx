@@ -17,7 +17,7 @@ export function ServicesSection() {
   const total = services.length
 
   return (
-    <section className="border-b-2 border-border-subtle">
+    <section className="border-b border-foreground">
       {/* Header — matches About / Callback sections exactly */}
       <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
         <div className="md:col-span-4">
