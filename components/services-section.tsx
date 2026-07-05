@@ -1,16 +1,16 @@
 import Link from "next/link"
-import { Handshake, Briefcase, Gavel, Users, HardHat, Home, PiggyBank, TrendingDown, ScrollText, ArrowRight } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 
 const services = [
-  { title: "General Civil Litigation", slug: "general-civil-litigation", icon: Handshake },
-  { title: "Commercial Litigation", slug: "commercial-litigation", icon: Briefcase },
-  { title: "Criminal Law Litigation", slug: "criminal-law-litigation", icon: Gavel },
-  { title: "Family Law", slug: "family-law", icon: Users },
-  { title: "Labour & Employment Law", slug: "labour-and-employment-law", icon: HardHat },
-  { title: "Property Law", slug: "property-law", icon: Home },
-  { title: "Pension Fund Law", slug: "pension-fund-law", icon: PiggyBank },
-  { title: "Insolvency Law", slug: "insolvency-law", icon: TrendingDown },
-  { title: "Deceased Estates Administration", slug: "deceased-estates-administration", icon: ScrollText },
+  { title: "General Civil Litigation", slug: "general-civil-litigation" },
+  { title: "Commercial Litigation", slug: "commercial-litigation" },
+  { title: "Criminal Law Litigation", slug: "criminal-law-litigation" },
+  { title: "Family Law", slug: "family-law" },
+  { title: "Labour & Employment Law", slug: "labour-and-employment-law" },
+  { title: "Property Law", slug: "property-law" },
+  { title: "Pension Fund Law", slug: "pension-fund-law" },
+  { title: "Insolvency Law", slug: "insolvency-law" },
+  { title: "Deceased Estates Administration", slug: "deceased-estates-administration" },
 ]
 
 export function ServicesSection() {
@@ -39,7 +39,6 @@ export function ServicesSection() {
       {/* Full-width grid — 1 col mobile, 2 col desktop */}
       <div className="grid w-full grid-cols-1 border-t border-foreground sm:grid-cols-2">
         {services.map((service, index) => {
-          const Icon = service.icon
           const isLastItem = index === total - 1
           // On desktop (2-col), the last two items form the final row — no bottom border needed
           const isInLastDesktopRow = index >= total - (total % 2 === 0 ? 2 : 1)
@@ -73,21 +72,13 @@ export function ServicesSection() {
                 </h3>
               </div>
 
-              {/* Right: practice-area icon + arrow button */}
-              <div className="flex shrink-0 items-center gap-4">
-                <Icon
-                  className="h-7 w-7 text-foreground/30 transition-colors duration-200 group-hover:text-foreground/70 md:h-8 md:w-8"
-                  strokeWidth={1}
-                  aria-hidden="true"
-                />
-                {/* Arrow — unmistakable clickable signifier matching site button style */}
-                <span
-                  aria-hidden="true"
-                  className="flex items-center gap-2 border border-foreground/40 px-3 py-2 text-[0.6rem] font-bold uppercase tracking-[0.15em] text-foreground/50 transition-all duration-200 group-hover:border-foreground group-hover:bg-foreground group-hover:text-background"
-                >
-                  <ArrowRight className="h-3 w-3" strokeWidth={2} />
-                </span>
-              </div>
+              {/* Right: arrow button — clickable signifier matching site style */}
+              <span
+                aria-hidden="true"
+                className="flex shrink-0 items-center gap-2 border border-foreground/40 px-3 py-2 text-[0.6rem] font-bold uppercase tracking-[0.15em] text-foreground/50 transition-all duration-200 group-hover:border-foreground group-hover:bg-foreground group-hover:text-background"
+              >
+                <ArrowRight className="h-3 w-3" strokeWidth={2} />
+              </span>
             </Link>
           )
         })}
