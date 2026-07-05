@@ -9,13 +9,26 @@ const navLinks = [
   { label: "Contact", href: "/contact" },
 ]
 
+const serviceLinks = [
+  { label: "General Civil Litigation", href: "/our-services/general-civil-litigation" },
+  { label: "Commercial Litigation", href: "/our-services/commercial-litigation" },
+  { label: "Criminal Law Litigation", href: "/our-services/criminal-law-litigation" },
+  { label: "Family Law", href: "/our-services/family-law" },
+  { label: "Labour & Employment Law", href: "/our-services/labour-and-employment-law" },
+  { label: "Property Law", href: "/our-services/property-law" },
+  { label: "Pension Fund Law", href: "/our-services/pension-fund-law" },
+  { label: "Insolvency Law", href: "/our-services/insolvency-law" },
+  { label: "Deceased Estates Administration", href: "/our-services/deceased-estates-administration" },
+]
+
 export function SiteFooter() {
   return (
     <footer className="border-t-2 border-border">
       <div className="w-full px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
+
           {/* Brand */}
-          <div className="md:col-span-5">
+          <div className="md:col-span-3">
             <div className="flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center border border-border/50 text-lg font-thin tracking-widest shadow-sm">
                 RM
@@ -32,10 +45,27 @@ export function SiteFooter() {
           </div>
 
           {/* Quick links */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Quick Links</p>
             <ul className="mt-6 space-y-3">
               {navLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm font-light text-muted-foreground transition-colors hover:text-foreground"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div className="md:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Our Services</p>
+            <ul className="mt-6 space-y-3">
+              {serviceLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -61,7 +91,7 @@ export function SiteFooter() {
                   <br />
                   Klamson Towers
                   <br />
-                  Johannesburg, Gauteng, 2001
+                  Johannesburg, 2001
                 </span>
               </li>
               <li className="flex gap-3">
@@ -78,6 +108,7 @@ export function SiteFooter() {
               </li>
             </ul>
           </div>
+
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border-subtle pt-8 text-xs font-bold text-muted-foreground/60 sm:flex-row">

@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X, Phone, ChevronDown } from "lucide-react"
 
 const services = [
   { label: "General Civil Litigation", href: "/our-services/general-civil-litigation" },
@@ -260,12 +260,13 @@ export function SiteHeader() {
               <button
                 type="button"
                 onClick={() => setMobileServicesOpen((v) => !v)}
-                className={`group flex w-full items-center px-6 py-5 text-sm font-medium uppercase tracking-widest transition-colors hover:bg-foreground/5 ${mobileServicesOpen ? 'text-foreground' : 'text-foreground/90 hover:text-foreground'}`}
+                className={`group flex w-full items-center justify-between px-6 py-5 text-sm font-medium uppercase tracking-widest transition-colors hover:bg-foreground/5 ${mobileServicesOpen ? 'text-foreground' : 'text-foreground/90 hover:text-foreground'}`}
               >
                 <div className="flex items-center">
                   <span className={`h-[1px] bg-foreground transition-all duration-300 ${mobileServicesOpen ? 'mr-4 w-6 opacity-100' : 'w-0 opacity-0 group-hover:mr-4 group-hover:w-6 group-hover:opacity-100'}`} />
                   Our Services
                 </div>
+                <ChevronDown className={`h-4 w-4 text-foreground/60 transition-transform duration-300 ease-out ${mobileServicesOpen ? 'rotate-180 text-foreground' : 'rotate-0'}`} />
               </button>
 
               {/* Accordion content */}

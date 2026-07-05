@@ -4,18 +4,22 @@ import { ArrowRight } from "lucide-react"
 export function AboutSection() {
   return (
     <section className="border-b-2 border-border-subtle">
-      <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
+      <div className="grid w-full gap-12 items-center px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
         <div className="md:col-span-4">
           <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
-          <h2 className="mt-4 text-4xl font-normal leading-tight md:text-5xl uppercase tracking-normal">
-            Principled counsel in the heart of Johannesburg, rooted in dignity.
-          </h2>
+          <div
+            className="mt-6 w-full aspect-square border border-border/40 bg-muted/20"
+            aria-label="Firm image placeholder"
+          />
         </div>
 
         <div className="md:col-span-8">
+          <h1 className="mb-6 text-3xl font-normal leading-tight md:text-4xl uppercase tracking-normal">
+            Principled Counsel. Rooted in Dignity.
+          </h1>
           <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              Principled counsel in the heart of Johannesburg, rooted in dignity. Mathe Rodrick Attorneys Inc is a full service law firm serving clients throughout Gauteng. We are built on a simple conviction: every client deserves representation that honours their humanity.
+              Mathe Rodrick Attorneys Inc is a full service law firm serving clients throughout Gauteng. We are built on a simple conviction: every client deserves representation that honours their humanity.
             </p>
             <p>
               From complex litigation to sensitive personal matters, our attorneys tailor their approach to the

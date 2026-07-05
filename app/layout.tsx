@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { Montserrat, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
+import { SmoothScrolling } from "@/components/smooth-scrolling"
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -30,7 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`bg-background ${montserrat.variable} ${cormorant.variable}`}>
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        <SmoothScrolling>{children}</SmoothScrolling>
+      </body>
     </html>
   )
 }
