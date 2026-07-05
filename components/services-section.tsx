@@ -19,7 +19,7 @@ export function ServicesSection() {
       <div className="w-full px-5 py-20 md:px-8 md:py-28">
         <div className="mx-auto max-w-4xl text-center">
           <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Expertise</p>
-          <h2 className="mt-6 font-serif text-5xl font-normal leading-tight md:text-7xl uppercase tracking-normal">
+          <h2 className="mt-6 text-4xl font-normal leading-tight md:text-5xl uppercase tracking-normal">
             Explore Our Expertise
           </h2>
           <p className="mt-8 mx-auto max-w-3xl text-sm md:text-base font-normal leading-relaxed text-muted-foreground">
