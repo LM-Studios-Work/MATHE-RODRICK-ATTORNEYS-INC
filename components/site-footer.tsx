@@ -11,21 +11,21 @@ const navLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border">
-      <div className="mx-auto max-w-7xl px-5 py-16 md:px-8">
+    <footer className="border-t-2 border-border">
+      <div className="w-full px-5 py-16 md:px-8">
         <div className="grid gap-12 md:grid-cols-12">
           {/* Brand */}
           <div className="md:col-span-5">
             <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 items-center justify-center border border-border font-serif text-lg font-semibold tracking-widest">
+              <span className="flex h-11 w-11 items-center justify-center border border-border/50 text-lg font-thin tracking-widest shadow-sm">
                 RM
               </span>
               <div className="flex flex-col leading-none">
-                <span className="font-serif text-sm font-semibold tracking-[0.18em]">MATHE RODRICK</span>
-                <span className="text-[0.6rem] tracking-[0.4em] text-muted-foreground">ATTORNEYS INC</span>
+                <span className="text-sm font-bold tracking-[0.18em]">MATHE RODRICK</span>
+                <span className="text-[0.6rem] font-bold tracking-[0.4em] text-muted-foreground">ATTORNEYS INC</span>
               </div>
             </div>
-            <p className="mt-6 max-w-sm text-sm leading-relaxed text-muted-foreground">
+            <p className="mt-6 max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
               Customised legal services driven by pure respect for human dignity and centred around ethical
               legal practices.
             </p>
@@ -33,13 +33,13 @@ export function SiteFooter() {
 
           {/* Quick links */}
           <div className="md:col-span-3">
-            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Quick Links</p>
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Quick Links</p>
             <ul className="mt-6 space-y-3">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                    className="text-sm font-light text-muted-foreground transition-colors hover:text-foreground"
                   >
                     {link.label}
                   </Link>
@@ -50,8 +50,8 @@ export function SiteFooter() {
 
           {/* Contact */}
           <div className="md:col-span-4">
-            <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Contact</p>
-            <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Contact</p>
+            <ul className="mt-6 space-y-4 text-sm font-light text-muted-foreground">
               <li className="flex gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
                 <span>
@@ -61,7 +61,7 @@ export function SiteFooter() {
                   <br />
                   Klamson Towers
                   <br />
-                  Johannesburg, 2001
+                  Johannesburg, Gauteng, 2001
                 </span>
               </li>
               <li className="flex gap-3">
@@ -80,7 +80,7 @@ export function SiteFooter() {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border-subtle pt-8 text-xs text-muted-foreground sm:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border-subtle pt-8 text-xs font-bold text-muted-foreground/60 sm:flex-row">
           <p>Copyright 2026 Mathe Rodrick Attorneys Inc. All rights reserved.</p>
           <p className="tracking-[0.2em] uppercase">Justice with dignity</p>
         </div>
