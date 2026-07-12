@@ -72,8 +72,13 @@ export default function OurFirmPage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="border-b border-foreground">
-          <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
+        <section className="relative border-b border-foreground overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/About%20page%20hero.webp')" }}
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="relative z-10 grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
             <div className="md:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
               <h1 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
@@ -90,9 +95,57 @@ export default function OurFirmPage() {
           </div>
         </section>
 
+        {/* Our Leader */}
+        <section id="our-leader" className="border-b border-foreground">
+          <div className="grid w-full gap-8 px-5 py-10 md:grid-cols-12 md:px-8 md:py-14">
+            <div className="md:col-span-4">
+              <div 
+                className="w-full aspect-square border border-foreground/30 bg-muted/10 flex items-center justify-center text-xs uppercase tracking-widest text-muted-foreground/60"
+                aria-label="Rodrick Mathe portrait placeholder"
+              >
+                [Portrait Placeholder]
+              </div>
+            </div>
+            <div className="md:col-span-8 flex flex-col gap-6 justify-center">
+              <div>
+                <h2 className="text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl flex flex-wrap items-baseline gap-x-4">
+                  <span>Rodrick Mathe</span>
+                  <span className="text-sm font-light tracking-wider text-muted-foreground/80 md:text-lg">
+                    LLB
+                  </span>
+                </h2>
+                <p className="mt-2 text-sm font-bold uppercase tracking-widest text-foreground">
+                  Founder & Managing Director
+                </p>
+                <p className="mt-4 text-xs font-normal tracking-[0.15em] text-muted-foreground/80">
+                  r.mathe@matherodrick.co.za / 073 908 3025
+                </p>
+              </div>
+              <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
+                <p>
+                  Rodrick Mathe is the founder and managing director of the firm. Driven by pure respect for human dignity and centred around ethical legal practices, he has established Mathe Rodrick Attorneys Inc as a distinguished firm in Johannesburg.
+                </p>
+                <p>
+                  With extensive experience as a litigator, Rodrick has built a formidable practice that is highly respected in the legal community. He has represented numerous clients across a wide range of legal circumstances, approaching each matter with a unique perspective and deep insight.
+                </p>
+                <p>
+                  He believes that every client is entitled to robust representation and thrives on advocating for those he represents in all courts of law. Rodrick's track record speaks for itself. He is known as an attorney who will not rest until his client's mandate has been carried out and the best possible result achieved.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* About the firm */}
-        <section className="border-b border-foreground">
-          <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
+        <section className="relative border-b border-foreground overflow-hidden">
+          <div 
+            className="absolute inset-0 bg-cover bg-no-repeat opacity-25 bg-[position:75%_35%] md:bg-[position:center_35%]"
+            style={{ 
+              backgroundImage: "url('/images/our%20experience.webp')"
+            }}
+          />
+          <div className="absolute inset-0 bg-black/15" />
+          <div className="relative z-10 grid w-full gap-8 px-5 py-10 md:grid-cols-12 md:px-8 md:py-14">
             <div className="md:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Who We Are</p>
               <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
@@ -168,7 +221,7 @@ export default function OurFirmPage() {
                   <div key={i} className="flex flex-col border border-foreground/20 p-8">
                     <div className="flex gap-1 mb-6">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-foreground text-foreground" />
+                        <Star key={i} className="h-4 w-4 fill-amber-500 text-amber-500" />
                       ))}
                     </div>
                     <h3 className="text-xs font-bold uppercase tracking-widest text-foreground">{review.title}</h3>
@@ -188,24 +241,24 @@ export default function OurFirmPage() {
 
         {/* CTA */}
         <section className="border-b border-foreground">
-          <div className="flex w-full flex-col items-start gap-8 px-5 py-20 md:flex-row md:items-center md:justify-between md:px-8 md:py-28">
+          <div className="flex w-full flex-col items-center text-center gap-8 px-5 py-20 md:flex-row md:items-center md:justify-between md:text-left md:px-8 md:py-28">
             <div className="max-w-xl">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Work With Us</p>
               <h2 className="mt-4 text-3xl font-normal uppercase leading-tight tracking-normal md:text-4xl">
                 Ready to Discuss Your Legal Matter?
               </h2>
             </div>
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col gap-4 w-full sm:flex-row md:w-auto md:justify-end">
               <Link
-                href="/our-team"
-                className="group inline-flex items-center gap-3 border border-foreground/40 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background"
+                href="#our-leader"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 border border-foreground/40 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background"
               >
-                Meet Our Team
+                Meet Our Leader
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
               </Link>
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80"
               >
                 Contact Us
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />

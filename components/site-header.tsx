@@ -7,14 +7,11 @@ import { Menu, X, Phone, ChevronDown } from "lucide-react"
 
 const services = [
   { label: "General Civil Litigation", href: "/our-services/general-civil-litigation" },
-  { label: "Commercial Litigation", href: "/our-services/commercial-litigation" },
-  { label: "Criminal Law Litigation", href: "/our-services/criminal-law-litigation" },
-  { label: "Family Law", href: "/our-services/family-law" },
-  { label: "Labour & Employment Law", href: "/our-services/labour-and-employment-law" },
+  { label: "Corporate & Insolvency Law", href: "/our-services/corporate-and-insolvency-law" },
+  { label: "Family & Estate Administration", href: "/our-services/family-and-estate-administration" },
+  { label: "Labour & Pension Law", href: "/our-services/labour-and-pension-law" },
   { label: "Property Law", href: "/our-services/property-law" },
-  { label: "Pension Fund Law", href: "/our-services/pension-fund-law" },
-  { label: "Insolvency Law", href: "/our-services/insolvency-law" },
-  { label: "Deceased Estates Administration", href: "/our-services/deceased-estates-administration" },
+  { label: "Criminal Defense", href: "/our-services/criminal-defense" },
 ]
 
 export function SiteHeader() {
@@ -113,16 +110,15 @@ export function SiteHeader() {
               onMouseEnter={() => setDesktopServicesOpen(true)}
               onMouseLeave={() => setDesktopServicesOpen(false)}
             >
-              <Link
-                href="/our-services"
-                className={`flex items-center text-[12px] font-medium uppercase tracking-[0.2em] transition-all hover:text-foreground/80 ${
+              <span
+                className={`flex items-center cursor-default text-[12px] font-medium uppercase tracking-[0.2em] transition-all ${
                   desktopServicesOpen ? 'text-foreground/80' : 'text-foreground'
                 } ${
                   pathname.startsWith('/our-services') ? 'after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground' : ''
                 } relative`}
               >
                 Our Services
-              </Link>
+              </span>
 
               {/* Dropdown panel */}
               <div
@@ -162,12 +158,19 @@ export function SiteHeader() {
             </Link>
 
             <Link
-              href="/our-team"
-              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 ${
-                pathname === '/our-team' ? 'after:absolute after:-bottom-1 after:h-px after:left-0 after:w-full after:bg-foreground' : ''
-              }`}
+              href="/our-firm#our-leader"
+              onClick={(e) => {
+                if (pathname === '/our-firm') {
+                  e.preventDefault();
+                  const el = document.getElementById('our-leader');
+                  if (el) {
+                    el.scrollIntoView({ behavior: 'smooth' });
+                  }
+                }
+              }}
+              className="relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80"
             >
-              Our Team
+              Our Leader
             </Link>
 
             <Link
@@ -303,12 +306,12 @@ export function SiteHeader() {
             </Link>
 
             <Link
-              href="/our-team"
+              href="/our-firm#our-leader"
               onClick={() => setMobileOpen(false)}
               className="group flex items-center border-b border-border/20 px-6 py-5 text-sm font-medium uppercase tracking-widest text-foreground transition-colors hover:bg-foreground/5 hover:text-foreground"
             >
               <span className="h-[1px] w-0 bg-foreground opacity-0 transition-all duration-300 group-hover:mr-4 group-hover:w-6 group-hover:opacity-100" />
-              Our Team
+              Our Leader
             </Link>
 
             <Link

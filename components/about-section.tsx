@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 
 export function AboutSection() {
@@ -7,10 +8,15 @@ export function AboutSection() {
       <div className="grid w-full gap-12 items-center px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
         <div className="md:col-span-4">
           <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
-          <div
-            className="mt-6 w-full aspect-square border border-border/40 bg-muted/20"
-            aria-label="Firm image placeholder"
-          />
+          <div className="mt-6 w-full aspect-square relative overflow-hidden border border-border/40">
+            <Image
+              src="/images/About page hero.webp"
+              alt="Mathe Rodrick Attorneys Inc"
+              fill
+              className="object-cover"
+              priority
+            />
+          </div>
         </div>
 
         <div className="md:col-span-8">

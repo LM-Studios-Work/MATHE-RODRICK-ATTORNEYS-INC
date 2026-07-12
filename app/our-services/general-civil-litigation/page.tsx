@@ -49,23 +49,20 @@ const ourApproach = [
 
 const otherServices = [
   {
-    title: "Commercial Litigation",
-    slug: "commercial-litigation",
-    description:
-      "Strategic representation in commercial disputes involving contracts, business relationships, and corporate matters across Gauteng.",
+    title: "Corporate & Insolvency Law",
+    slug: "corporate-and-insolvency-law",
+    description: "Strategic representation in commercial disputes, business relationships, and insolvency matters across Gauteng."
   },
   {
-    title: "Criminal Law Litigation",
-    slug: "criminal-law-litigation",
-    description:
-      "Robust criminal defence representation from bail applications through to trial in all Gauteng courts.",
+    title: "Family & Estate Administration",
+    slug: "family-and-estate-administration",
+    description: "Sensitive counsel in divorce, maintenance, and the administration of deceased estates."
   },
   {
-    title: "Family Law",
-    slug: "family-law",
-    description:
-      "Sensitive and principled counsel in divorce, maintenance, custody, and related domestic matters.",
-  },
+    title: "Labour & Pension Law",
+    slug: "labour-and-pension-law",
+    description: "Expert guidance on employment disputes, workplace regulations, and pension fund matters."
+  }
 ]
 
 export default function GeneralCivilLitigationPage() {
@@ -75,8 +72,13 @@ export default function GeneralCivilLitigationPage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="border-b border-foreground">
-          <div className="grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
+        <section className="relative border-b border-foreground overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/Litigation%20hero.jpg')" }}
+          />
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="relative z-10 grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
             <div className="md:col-span-4">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground">
                 Legal Service

@@ -24,6 +24,8 @@ export const metadata: Metadata = {
   generator: "v0.app",
 }
 
+import { WhatsAppButton } from "@/components/whatsapp-button"
+
 export default function RootLayout({
   children,
 }: {
@@ -33,6 +35,7 @@ export default function RootLayout({
     <html lang="en" className={`bg-background ${montserrat.variable} ${cormorant.variable}`}>
       <body className="font-sans antialiased">
         <SmoothScrolling>{children}</SmoothScrolling>
+        <WhatsAppButton />
       </body>
     </html>
   )

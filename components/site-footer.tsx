@@ -1,24 +1,21 @@
 import Link from "next/link"
-import { MapPin, Phone, Mail } from "lucide-react"
+import { MapPin, Phone, Mail, Facebook } from "lucide-react"
 
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Our Firm", href: "/our-firm" },
-  { label: "Our Team", href: "/our-team" },
+  { label: "Our Leader", href: "/our-firm#our-leader" },
   { label: "Our Services", href: "/our-services" },
   { label: "Contact", href: "/contact" },
 ]
 
 const serviceLinks = [
   { label: "General Civil Litigation", href: "/our-services/general-civil-litigation" },
-  { label: "Commercial Litigation", href: "/our-services/commercial-litigation" },
-  { label: "Criminal Law Litigation", href: "/our-services/criminal-law-litigation" },
-  { label: "Family Law", href: "/our-services/family-law" },
-  { label: "Labour & Employment Law", href: "/our-services/labour-and-employment-law" },
+  { label: "Corporate & Insolvency Law", href: "/our-services/corporate-and-insolvency-law" },
+  { label: "Family & Estate Administration", href: "/our-services/family-and-estate-administration" },
+  { label: "Labour & Pension Law", href: "/our-services/labour-and-pension-law" },
   { label: "Property Law", href: "/our-services/property-law" },
-  { label: "Pension Fund Law", href: "/our-services/pension-fund-law" },
-  { label: "Insolvency Law", href: "/our-services/insolvency-law" },
-  { label: "Deceased Estates Administration", href: "/our-services/deceased-estates-administration" },
+  { label: "Criminal Defense", href: "/our-services/criminal-defense" },
 ]
 
 export function SiteFooter() {
@@ -42,6 +39,22 @@ export function SiteFooter() {
               Customised legal services driven by pure respect for human dignity and centred around ethical
               legal practices.
             </p>
+            <div className="mt-8">
+              <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">
+                See us on our socials
+              </p>
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.facebook.com/people/Mathe-Rodrick-Attorneys-Inc/61578121375513/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-foreground"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
 
           {/* Quick links */}

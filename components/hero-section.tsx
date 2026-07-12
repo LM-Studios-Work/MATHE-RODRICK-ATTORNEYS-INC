@@ -36,7 +36,7 @@ export function HeroSection() {
 
           <div className="mt-10 flex justify-center">
             <Link
-              href="/our-services"
+              href="#expertise"
               className="group inline-flex items-center gap-3 border border-border/50 px-10 py-4 text-xs font-bold uppercase tracking-[0.25em] text-foreground transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-lg hover:shadow-white/5"
             >
               Explore Our Services

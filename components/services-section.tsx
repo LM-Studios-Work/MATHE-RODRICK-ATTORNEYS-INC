@@ -3,21 +3,18 @@ import { ArrowRight } from "lucide-react"
 
 const services = [
   { title: "General Civil Litigation", slug: "general-civil-litigation" },
-  { title: "Commercial Litigation", slug: "commercial-litigation" },
-  { title: "Criminal Law Litigation", slug: "criminal-law-litigation" },
-  { title: "Family Law", slug: "family-law" },
-  { title: "Labour & Employment Law", slug: "labour-and-employment-law" },
+  { title: "Corporate & Insolvency Law", slug: "corporate-and-insolvency-law" },
+  { title: "Family & Estate Administration", slug: "family-and-estate-administration" },
+  { title: "Labour & Pension Law", slug: "labour-and-pension-law" },
   { title: "Property Law", slug: "property-law" },
-  { title: "Pension Fund Law", slug: "pension-fund-law" },
-  { title: "Insolvency Law", slug: "insolvency-law" },
-  { title: "Deceased Estates Administration", slug: "deceased-estates-administration" },
+  { title: "Criminal Defense", slug: "criminal-defense" },
 ]
 
 export function ServicesSection() {
   const total = services.length
 
   return (
-    <section className="border-b border-foreground">
+    <section id="expertise" className="border-b border-foreground">
       {/* Header — matches About / Callback sections exactly */}
       <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
         <div className="md:col-span-4">
