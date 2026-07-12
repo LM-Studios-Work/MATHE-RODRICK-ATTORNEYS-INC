@@ -154,16 +154,13 @@ export default function OurFirmPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:col-span-8 md:text-lg">
               <p>
-                Based in the heart of Johannesburg at Klamson Towers, Mathe Rodrick Attorneys Inc has built a reputation as a firm that listens carefully, advises honestly, and pursues outcomes that protect both your interests and your dignity.
+                Based in the heart of Johannesburg at Klamson Towers, Mathe Rodrick Attorneys Inc has built a reputation as a firm that listens carefully, advises honestly, and pursues outcomes that protect both your interests and your dignity. Having represented numerous clients across a wide range of legal circumstances, we approach each matter with a unique perspective and deep insight.
               </p>
               <p>
-                Our broad focus across multiple practice areas has resulted in substantial collective experience. Having represented numerous clients across a wide range of legal circumstances, we approach each matter with a unique perspective and deep insight.
+                Our attorneys bring robust expertise to the table across general civil and commercial litigation, family law, labour matters, and deceased estate administration. We serve individuals, families, and businesses throughout Gauteng with the same unwavering dedication and substantial collective experience.
               </p>
               <p>
-                Our attorneys bring robust expertise to the table, from general civil and commercial litigation to family law, labour matters, and deceased estate administration. We serve individuals, families, and businesses across Gauteng with the same unwavering dedication.
-              </p>
-              <p>
-                We believe that quality legal representation should not be a privilege. Whether you are an individual navigating a personal challenge or a business managing complex disputes, our team is committed to delivering counsel that is clear, strategic, and grounded in principle.
+                We believe that quality legal representation should not be a privilege. Whether you are navigating a personal challenge or managing complex business disputes, our team is committed to delivering counsel that is clear, strategic, and grounded in principle.
               </p>
             </div>
           </div>

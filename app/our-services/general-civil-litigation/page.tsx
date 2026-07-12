@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { ArrowRight, Scale, Shield, Briefcase } from "lucide-react"
+import { OtherServices } from "@/components/other-services"
 
 export const metadata: Metadata = {
   title: "General Civil Litigation | Mathe Rodrick Attorneys Inc",
@@ -44,24 +45,6 @@ const ourApproach = [
     icon: Briefcase,
     title: "Commercial Reality",
     description: "We tailor our litigation strategy to align with your objectives and the commercial realities of your situation, always seeking cost-effective resolutions."
-  }
-]
-
-const otherServices = [
-  {
-    title: "Corporate & Insolvency Law",
-    slug: "corporate-and-insolvency-law",
-    description: "Strategic representation in commercial disputes, business relationships, and insolvency matters across Gauteng."
-  },
-  {
-    title: "Family & Estate Administration",
-    slug: "family-and-estate-administration",
-    description: "Sensitive counsel in divorce, maintenance, and the administration of deceased estates."
-  },
-  {
-    title: "Labour & Pension Law",
-    slug: "labour-and-pension-law",
-    description: "Expert guidance on employment disputes, workplace regulations, and pension fund matters."
   }
 ]
 
@@ -208,50 +191,7 @@ export default function GeneralCivilLitigationPage() {
           </div>
         </section>
 
-        {/* Other Practice Areas */}
-        <section className="border-b border-foreground">
-          <div className="px-5 py-20 md:px-8 md:py-28">
-            <div className="mb-12 md:mb-16">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Explore</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
-                Other Practice Areas
-              </h2>
-            </div>
-            <div className="grid w-full grid-cols-1 border-t border-foreground sm:grid-cols-3">
-              {otherServices.map((service, index) => (
-                <Link
-                  key={service.slug}
-                  href={`/our-services/${service.slug}`}
-                  aria-label={`Learn more about ${service.title}`}
-                  className={[
-                    "group flex flex-col justify-between gap-8 px-5 py-10 transition-colors duration-200 hover:bg-white/[0.04] md:px-8",
-                    index !== otherServices.length - 1 ? "border-b border-foreground sm:border-b-0 sm:border-r sm:border-r-foreground" : "",
-                  ]
-                    .filter(Boolean)
-                    .join(" ")}
-                >
-                  <div>
-                    <span className="font-sans text-[2rem] font-thin leading-none tracking-tight text-foreground">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="mt-4 text-xs font-bold uppercase tracking-widest text-muted-foreground transition-colors duration-200 group-hover:text-foreground">
-                      {service.title}
-                    </h3>
-                    <p className="mt-4 text-sm font-normal leading-relaxed text-muted-foreground">
-                      {service.description}
-                    </p>
-                  </div>
-                  <span
-                    aria-hidden="true"
-                    className="inline-flex w-fit items-center gap-2 border border-foreground/40 px-3 py-2 text-[0.6rem] font-bold uppercase tracking-[0.15em] text-foreground/50 transition-all duration-200 group-hover:border-foreground group-hover:bg-foreground group-hover:text-background"
-                  >
-                    <ArrowRight className="h-3 w-3" strokeWidth={2} />
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
+        <OtherServices currentServiceSlug="general-civil-litigation" />
 
       </main>
       <SiteFooter />

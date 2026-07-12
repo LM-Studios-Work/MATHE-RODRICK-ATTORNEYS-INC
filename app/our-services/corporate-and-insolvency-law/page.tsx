@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { OtherServices } from "@/components/other-services"
 
 export const metadata: Metadata = {
   title: "Corporate & Insolvency Law | Mathe Rodrick Attorneys Inc",
@@ -15,6 +16,10 @@ export default function ServicePage() {
       <SiteHeader />
       <main className="flex-1">
         <section className="relative border-b border-foreground overflow-hidden">
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/images/corporate%20law%20hero.jpg')" }}
+          />
           <div className="absolute inset-0 bg-black/55" />
           <div className="relative z-10 grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
             <div className="md:col-span-4">
@@ -52,6 +57,8 @@ export default function ServicePage() {
             </div>
           </div>
         </section>
+
+        <OtherServices currentServiceSlug="corporate-and-insolvency-law" />
       </main>
       <SiteFooter />
     </div>
