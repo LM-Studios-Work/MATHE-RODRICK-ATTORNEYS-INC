@@ -58,7 +58,7 @@ export default function FamilyLawPage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="relative border-b border-foreground overflow-hidden">
+        <section className="relative flex min-h-[500px] md:min-h-[540px] items-center border-b border-foreground overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url('/images/Family%20law%20hero.webp')" }}

@@ -2,6 +2,7 @@ import { Metadata } from "next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Scale, Shield, Target, Layers, Star } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -72,13 +73,13 @@ export default function OurFirmPage() {
       <main className="flex-1">
 
         {/* Hero */}
-        <section className="relative border-b border-foreground overflow-hidden">
+        <section className="relative flex min-h-[500px] md:min-h-[540px] items-center border-b border-foreground overflow-hidden">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url('/images/About%20page%20hero.webp')" }}
           />
           <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
+          <div className="relative z-10 grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
             <div className="md:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
               <h1 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
@@ -99,11 +100,14 @@ export default function OurFirmPage() {
         <section id="our-leader" className="border-b border-foreground">
           <div className="grid w-full gap-8 px-5 py-10 md:grid-cols-12 md:px-8 md:py-14">
             <div className="md:col-span-4">
-              <div 
-                className="w-full aspect-square border border-foreground/30 bg-muted/10 flex items-center justify-center text-xs uppercase tracking-widest text-muted-foreground/60"
-                aria-label="Rodrick Mathe portrait placeholder"
-              >
-                [Portrait Placeholder]
+              <div className="group w-full aspect-square relative overflow-hidden border border-foreground/30">
+                <Image
+                  src="/images/mathe-rodrick-portrait.jpeg"
+                  alt="Rodrick Mathe – Founder & Managing Director"
+                  fill
+                  className="object-cover object-top grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0"
+                  priority
+                />
               </div>
             </div>
             <div className="md:col-span-8 flex flex-col gap-6 justify-center">
