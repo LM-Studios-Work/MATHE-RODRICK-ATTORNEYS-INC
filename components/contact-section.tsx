@@ -25,10 +25,10 @@ export function ContactSection() {
 
   return (
     <section className="border-b-2 border-border-subtle">
-      <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
+      <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
 
         {/* Contact Form Side — FIRST */}
-        <div className="md:col-span-7">
+        <div className="lg:col-span-7">
           {submitted ? (
             <div className="flex h-full min-h-[500px] flex-col items-center justify-center border border-border/50 p-10 text-center">
               <span className="mb-5 flex h-14 w-14 items-center justify-center border border-border/50">
@@ -110,7 +110,7 @@ export function ContactSection() {
 
               <div className="flex flex-col gap-2">
                 <label htmlFor="service" className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground">
-                  Service Required
+                  Practice Area Required
                 </label>
                 <div className="relative">
                   <select
@@ -120,7 +120,7 @@ export function ContactSection() {
                     defaultValue=""
                     className="w-full border border-border-subtle bg-background px-4 py-3.5 pr-10 text-foreground font-normal outline-none transition-all focus:border-foreground/60 appearance-none cursor-pointer"
                   >
-                    <option value="" disabled>Select a service</option>
+                    <option value="" disabled>Select a practice area</option>
                     {services.map((service, i) => (
                       <option key={i} value={service} className="bg-background text-foreground py-2">
                         {service}
@@ -153,20 +153,20 @@ export function ContactSection() {
 
               <button
                 type="submit"
-                className="group mt-4 inline-flex items-center justify-center gap-3 border border-border/50 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-background hover:text-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] sm:w-fit"
+                className="group mt-4 inline-flex items-center justify-center gap-3 border border-border/50 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-background hover:text-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] sm:w-fit whitespace-nowrap shrink-0"
               >
                 Send Message
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
               </button>
             </form>
           )}
         </div>
 
         {/* Contact Information & Map Side — SECOND */}
-        <div className="md:col-span-5 flex flex-col gap-10">
+        <div className="lg:col-span-5 flex flex-col gap-10">
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Get In Touch</p>
-            <h2 className="mt-4 text-4xl font-normal leading-tight md:text-5xl uppercase tracking-normal">
+            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal leading-tight uppercase tracking-normal break-words">
               Contact Us
             </h2>
             <p className="mt-5 max-w-md text-base font-normal leading-relaxed text-muted-foreground">
@@ -194,7 +194,7 @@ export function ContactSection() {
                 <Phone className="h-4 w-4 text-foreground" aria-hidden="true" />
               </span>
               <a href="tel:+27739083025" className="text-muted-foreground transition-colors hover:text-foreground">
-                073 9083025
+                073 908 3025
               </a>
             </li>
             <li className="flex gap-4 items-center">

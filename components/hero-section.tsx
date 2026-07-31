@@ -28,7 +28,7 @@ export function HeroSection() {
             Mathe Rodrick Attorneys Inc
           </p>
 
-          <h1 className="text-balance text-3xl font-normal leading-tight drop-shadow-sm md:text-4xl lg:text-5xl">
+          <h1 className="text-balance text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-normal leading-snug md:leading-tight drop-shadow-sm">
             Customised legal services in Johannesburg and the wider Gauteng region, driven by pure respect for human dignity and centred around ethical legal practices.
           </h1>
 
@@ -37,10 +37,10 @@ export function HeroSection() {
           <div className="mt-10 flex justify-center">
             <Link
               href="#expertise"
-              className="group inline-flex items-center gap-3 border border-border/50 px-10 py-4 text-xs font-bold uppercase tracking-[0.25em] text-foreground transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-lg hover:shadow-white/5"
+              className="group inline-flex items-center justify-center gap-3 border border-border/50 px-8 sm:px-10 py-4 text-xs font-bold uppercase tracking-[0.2em] sm:tracking-[0.25em] text-foreground transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-lg hover:shadow-white/5 whitespace-nowrap shrink-0"
             >
-              Explore Our Services
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5" aria-hidden="true" strokeWidth={1.5} />
+              Explore Our Practice Areas
+              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1.5 shrink-0" aria-hidden="true" strokeWidth={1.5} />
             </Link>
           </div>
         </div>

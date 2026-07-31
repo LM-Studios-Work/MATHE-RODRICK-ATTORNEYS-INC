@@ -79,14 +79,14 @@ export default function OurFirmPage() {
             style={{ backgroundImage: "url('/images/About%20page%20hero.webp')" }}
           />
           <div className="absolute inset-0 bg-black/55" />
-          <div className="relative z-10 grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
-            <div className="md:col-span-4">
+          <div className="relative z-10 grid w-full gap-12 px-5 py-24 lg:grid-cols-12 md:px-8 md:py-32">
+            <div className="lg:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
               <h1 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
                 Principled Counsel. Rooted in Dignity.
               </h1>
             </div>
-            <div className="flex items-center md:col-span-8">
+            <div className="flex items-center lg:col-span-8">
               <p className="text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
                 Mathe Rodrick Attorneys Inc is a full-service law firm serving clients throughout Gauteng.
                 We are built on a simple conviction: every client deserves representation that honours their humanity.
@@ -98,21 +98,21 @@ export default function OurFirmPage() {
 
         {/* Our Leader */}
         <section id="our-leader" className="border-b border-foreground">
-          <div className="grid w-full gap-8 px-5 py-10 md:grid-cols-12 md:px-8 md:py-14">
-            <div className="md:col-span-4">
+          <div className="grid w-full gap-8 px-5 py-10 lg:grid-cols-12 md:px-8 md:py-14">
+            <div className="lg:col-span-4">
               <div className="group w-full aspect-square relative overflow-hidden border border-foreground/30">
                 <Image
                   src="/images/mathe-rodrick-portrait.jpeg"
                   alt="Rodrick Mathe – Founder & Managing Director"
                   fill
-                  className="object-cover object-top grayscale transition-all duration-500 ease-in-out group-hover:grayscale-0"
+                  className="object-cover object-top"
                   priority
                 />
               </div>
             </div>
-            <div className="md:col-span-8 flex flex-col gap-6 justify-center">
+            <div className="lg:col-span-8 flex flex-col gap-6 justify-center">
               <div>
-                <h2 className="text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl flex flex-wrap items-baseline gap-x-4">
+                <h2 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal flex flex-wrap items-baseline gap-x-4 break-words">
                   <span>Rodrick Mathe</span>
                   <span className="text-sm font-light tracking-wider text-muted-foreground/80 md:text-lg">
                     LLB
@@ -149,14 +149,14 @@ export default function OurFirmPage() {
             }}
           />
           <div className="absolute inset-0 bg-black/15" />
-          <div className="relative z-10 grid w-full gap-8 px-5 py-10 md:grid-cols-12 md:px-8 md:py-14">
-            <div className="md:col-span-4">
+          <div className="relative z-10 grid w-full gap-8 px-5 py-10 lg:grid-cols-12 md:px-8 md:py-14">
+            <div className="lg:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Who We Are</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Our Experience
               </h2>
             </div>
-            <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:col-span-8 md:text-lg">
+            <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
                 Based in the heart of Johannesburg at Klamson Towers, Mathe Rodrick Attorneys Inc has built a reputation as a firm that listens carefully, advises honestly, and pursues outcomes that protect both your interests and your dignity. Having represented numerous clients across a wide range of legal circumstances, we approach each matter with a unique perspective and deep insight.
               </p>
@@ -180,10 +180,10 @@ export default function OurFirmPage() {
               </h2>
             </div>
 
-            {/* Desktop: 4 separate bordered squares side by side */}
-            <div className="hidden md:flex md:flex-row md:gap-6">
+            {/* Responsive grid: 1 col on mobile, 2 cols on tablet/laptop, 4 cols on wide screens */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
               {pillars.map(({ icon: Icon, title, description }) => (
-                <div key={title} className="flex flex-1 flex-col gap-6 border border-foreground p-8">
+                <div key={title} className="flex flex-col gap-6 border border-foreground p-8 bg-background">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-foreground/30">
                     <Icon className="h-4 w-4 text-foreground/60" strokeWidth={1.5} />
                   </div>
@@ -194,30 +194,20 @@ export default function OurFirmPage() {
                 </div>
               ))}
             </div>
-
-            {/* Mobile: plain list with bold dividers */}
-            <div className="md:hidden">
-              {pillars.map(({ icon: Icon, title, description }, i) => (
-                <div key={title} className={`py-6 ${i !== 0 ? "border-t-2 border-foreground" : ""}`}>
-                  <h3 className="text-xs font-bold uppercase tracking-widest text-foreground">{title}</h3>
-                  <p className="mt-3 text-sm font-normal leading-relaxed text-muted-foreground">{description}</p>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
         {/* Reviews */}
         <section className="border-b border-foreground">
-          <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
-            <div className="md:col-span-4">
+          <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
+            <div className="lg:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">What Clients Are Saying</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 5-Star Reviews
               </h2>
             </div>
-            <div className="md:col-span-8">
-              <div className="grid gap-8 sm:grid-cols-2">
+            <div className="lg:col-span-8">
+              <div className="grid gap-8 grid-cols-1 xl:grid-cols-2">
                 {reviews.map((review, i) => (
                   <div key={i} className="flex flex-col border border-foreground/20 p-8">
                     <div className="flex gap-1 mb-6">
@@ -242,27 +232,27 @@ export default function OurFirmPage() {
 
         {/* CTA */}
         <section className="border-b border-foreground">
-          <div className="flex w-full flex-col items-center text-center gap-8 px-5 py-20 md:flex-row md:items-center md:justify-between md:text-left md:px-8 md:py-28">
-            <div className="max-w-xl">
+          <div className="flex w-full flex-col items-start gap-8 px-5 py-20 lg:flex-row lg:items-center lg:justify-between md:px-8 md:py-28">
+            <div className="max-w-2xl flex-1 min-w-0">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Work With Us</p>
-              <h2 className="mt-4 text-3xl font-normal uppercase leading-tight tracking-normal md:text-4xl">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Ready to Discuss Your Legal Matter?
               </h2>
             </div>
-            <div className="flex flex-col gap-4 w-full sm:flex-row md:w-auto md:justify-end">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">
               <Link
                 href="#our-leader"
-                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 border border-foreground/40 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 border border-foreground/40 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background whitespace-nowrap shrink-0"
               >
                 Meet Our Leader
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
               </Link>
               <Link
                 href="/contact"
-                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80"
+                className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Contact Us
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
               </Link>
             </div>
           </div>

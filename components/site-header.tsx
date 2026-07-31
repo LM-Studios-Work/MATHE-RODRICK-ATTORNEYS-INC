@@ -80,23 +80,23 @@ export function SiteHeader() {
         {/* Subtle white gradient line at the top for pop */}
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
         
-        <div className="flex h-[66px] w-full items-center justify-between px-5 md:px-8">
+        <div className="flex h-[66px] w-full items-center justify-between px-4 sm:px-6 md:px-8">
           {/* Logo */}
-          <Link href="/" className="group flex items-center gap-3" aria-label="Mathe Rodrick Attorneys Inc home">
-            <span className="flex h-11 w-11 items-center justify-center border border-border/50 bg-background/50 text-lg font-normal tracking-widest text-foreground shadow-sm transition-all group-hover:border-foreground/40 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]">
+          <Link href="/" className="group flex items-center gap-3 shrink-0" aria-label="Mathe Rodrick Attorneys Inc home">
+            <span className="flex h-11 w-11 shrink-0 items-center justify-center border border-border/50 bg-background/50 text-lg font-normal tracking-widest text-foreground shadow-sm transition-all group-hover:border-foreground/40 group-hover:shadow-[0_0_15px_rgba(255,255,255,0.05)]">
               RM
             </span>
-            <span className="hidden flex-col leading-none sm:flex">
+            <span className="hidden flex-col leading-none sm:flex whitespace-nowrap">
               <span className="text-sm font-normal tracking-widest text-foreground">MATHE RODRICK</span>
               <span className="text-[0.6rem] font-normal tracking-widest text-muted-foreground">ATTORNEYS INC</span>
             </span>
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden items-center gap-16 lg:flex" aria-label="Primary">
+          <nav className="hidden items-center gap-4 lg:gap-6 xl:gap-10 2xl:gap-14 lg:flex shrink-0" aria-label="Primary">
             <Link
               href="/"
-              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 ${
+              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 whitespace-nowrap shrink-0 ${
                 pathname === '/' ? 'after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground' : ''
               }`}
             >
@@ -111,13 +111,13 @@ export function SiteHeader() {
               onMouseLeave={() => setDesktopServicesOpen(false)}
             >
               <span
-                className={`flex items-center cursor-default text-[12px] font-medium uppercase tracking-[0.2em] transition-all ${
+                className={`flex items-center cursor-default text-[12px] font-medium uppercase tracking-[0.2em] transition-all whitespace-nowrap shrink-0 ${
                   desktopServicesOpen ? 'text-foreground/80' : 'text-foreground'
                 } ${
                   pathname.startsWith('/our-services') ? 'after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground' : ''
                 } relative`}
               >
-                Our Services
+                Our Practice Areas
               </span>
 
               {/* Dropdown panel */}
@@ -150,7 +150,7 @@ export function SiteHeader() {
 
             <Link
               href="/our-firm"
-              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 ${
+              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 whitespace-nowrap shrink-0 ${
                 pathname === '/our-firm' ? 'after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground' : ''
               }`}
             >
@@ -168,14 +168,14 @@ export function SiteHeader() {
                   }
                 }
               }}
-              className="relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80"
+              className="relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 whitespace-nowrap shrink-0"
             >
               Our Leader
             </Link>
 
             <Link
               href="/contact"
-              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 ${
+              className={`relative text-[12px] font-medium uppercase tracking-[0.2em] text-foreground transition-all hover:text-foreground/80 whitespace-nowrap shrink-0 ${
                 pathname === '/contact' ? 'after:absolute after:-bottom-1 after:left-0 after:h-px after:w-full after:bg-foreground' : ''
               }`}
             >
@@ -184,13 +184,13 @@ export function SiteHeader() {
           </nav>
 
           {/* Phone + mobile toggle */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4 shrink-0">
             <a
               href="tel:+27739083025"
-              className="hidden items-center gap-2 border border-border/50 bg-foreground/5 px-4 py-2.5 text-[11px] font-medium tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-lg md:flex"
+              className="hidden items-center gap-2 border border-border/50 bg-foreground/5 px-3 lg:px-4 py-2 text-[11px] font-medium tracking-[0.15em] lg:tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-lg md:flex whitespace-nowrap shrink-0"
             >
-              <Phone className="h-3.5 w-3.5" aria-hidden="true" />
-              073 9083025
+              <Phone className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+              <span>073 908 3025</span>
             </a>
 
             <button
@@ -267,7 +267,7 @@ export function SiteHeader() {
               >
                 <div className="flex items-center">
                   <span className={`h-[1px] bg-foreground transition-all duration-300 ${mobileServicesOpen ? 'mr-4 w-6 opacity-100' : 'w-0 opacity-0 group-hover:mr-4 group-hover:w-6 group-hover:opacity-100'}`} />
-                  Our Services
+                  Our Practice Areas
                 </div>
                 <ChevronDown className={`h-4 w-4 text-foreground/60 transition-transform duration-300 ease-out ${mobileServicesOpen ? 'rotate-180 text-foreground' : 'rotate-0'}`} />
               </button>
@@ -332,7 +332,7 @@ export function SiteHeader() {
             className="group flex items-center justify-center gap-3 border border-border/50 bg-foreground/5 py-4 text-xs font-normal tracking-widest text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-lg"
           >
             <Phone className="h-4 w-4" strokeWidth={1} />
-            073 9083025
+            073 908 3025
           </a>
         </div>
       </nav>

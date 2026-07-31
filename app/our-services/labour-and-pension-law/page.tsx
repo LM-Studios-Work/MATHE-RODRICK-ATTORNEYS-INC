@@ -65,16 +65,16 @@ export default function LabourPensionLawPage() {
             style={{ backgroundImage: "url('/images/Labour%20Law%20Hero.png')" }}
           />
           <div className="absolute inset-0 bg-black/60" />
-          <div className="relative z-10 grid w-full gap-12 px-5 py-24 md:grid-cols-12 md:px-8 md:py-32">
-            <div className="md:col-span-5">
+          <div className="relative z-10 grid w-full gap-12 px-5 py-24 lg:grid-cols-12 md:px-8 md:py-32">
+            <div className="lg:col-span-5">
               <p className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground text-white/70">
-                Legal Service
+                Practice Area
               </p>
               <h1 className="text-4xl font-normal uppercase leading-tight tracking-normal text-white md:text-5xl lg:text-6xl">
                 Labour & Pension Law
               </h1>
             </div>
-            <div className="flex items-end md:col-span-7">
+            <div className="flex items-end lg:col-span-7">
               <p className="border-l border-white/20 pl-6 text-base font-normal leading-relaxed text-white/80 md:text-lg">
                 Respectfully guiding clients through challenging labour litigation, complex workplace disputes, and intricate pension fund regulations with personalised and efficient legal service.
               </p>
@@ -84,14 +84,14 @@ export default function LabourPensionLawPage() {
 
         {/* What We Do */}
         <section className="border-b border-foreground">
-          <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
-            <div className="md:col-span-4">
+          <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
+            <div className="lg:col-span-4">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Approach</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 What We Do
               </h2>
             </div>
-            <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:col-span-8 md:text-lg">
+            <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
                 Mathe Rodrick Attorneys Inc is an established and experienced law firm in Johannesburg, deeply committed to ethical legal practices. We understand that workplace disputes and pension fund challenges deeply affect your livelihood, your dignity, and your future financial security.
               </p>
@@ -109,8 +109,8 @@ export default function LabourPensionLawPage() {
 
         {/* Labour and Employment Law (Split Layout) */}
         <section className="border-b border-foreground bg-foreground/[0.02]">
-          <div className="grid w-full gap-0 md:grid-cols-2">
-            <div className="border-b border-foreground p-5 py-20 md:border-b-0 md:border-r md:p-12 lg:p-20">
+          <div className="grid w-full gap-0 lg:grid-cols-2">
+            <div className="border-b border-foreground p-5 py-20 lg:border-b-0 lg:border-r md:p-12 lg:p-20">
                <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Employment Law</p>
                <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
                  Labour and Employment Law
@@ -191,18 +191,18 @@ export default function LabourPensionLawPage() {
 
         {/* Comprehensive Pension Services (Structured Grid) */}
         <section className="border-b border-foreground">
-          <div className="grid w-full gap-0 md:grid-cols-12">
-            <div className="border-b border-foreground p-5 py-20 md:col-span-4 md:border-b-0 md:border-r md:p-8 lg:p-12 xl:p-16">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Services</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
-                Comprehensive Pension Services
+          <div className="grid w-full gap-0 lg:grid-cols-12">
+            <div className="border-b border-foreground p-5 py-20 lg:col-span-4 lg:border-b-0 lg:border-r md:p-8 lg:p-12 xl:p-16">
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Practice Areas</p>
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+                Comprehensive Pension Practice Areas
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
                 We manage the legal and regulatory complexities so you can achieve resolution and protect your retirement benefits.
               </p>
             </div>
             
-            <div className="md:col-span-8">
+            <div className="lg:col-span-8">
               <div className="grid grid-cols-1 gap-0 sm:grid-cols-2">
                 {pensionServices.map((service, index) => {
                   const isLastItem = index === pensionServices.length - 1
@@ -238,23 +238,23 @@ export default function LabourPensionLawPage() {
 
         {/* CTA */}
         <section className="border-b border-foreground">
-          <div className="flex w-full flex-col items-start gap-8 px-5 py-20 md:flex-row md:items-center md:justify-between md:px-8 md:py-28">
-            <div className="max-w-xl">
+          <div className="flex w-full flex-col items-start gap-8 px-5 py-20 lg:flex-row lg:items-center lg:justify-between md:px-8 md:py-28">
+            <div className="max-w-2xl flex-1 min-w-0">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Principled Counsel</p>
-              <h2 className="mt-4 text-3xl font-normal uppercase leading-tight tracking-normal md:text-4xl">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Principled Counsel For Your Livelihood
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
                 Whether you are navigating an unfair labour practice, structuring executive employment agreements, or contesting an unfair pension benefit decision, we are here to provide clear, honest, and effective legal support.
               </p>
             </div>
-            <div className="flex flex-col gap-4 sm:flex-row">
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80"
+                className="group inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Book a Consultation
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
               </Link>
             </div>
           </div>

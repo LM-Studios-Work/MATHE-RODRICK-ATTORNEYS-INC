@@ -13,10 +13,10 @@ export function CallbackSection() {
 
   return (
     <section className="border-b-2 border-border-subtle">
-      <div className="grid w-full gap-12 px-5 py-20 md:grid-cols-12 md:px-8 md:py-28">
-        <div className="md:col-span-5">
+      <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
+        <div className="lg:col-span-5">
           <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Get In Touch</p>
-          <h2 className="mt-4 text-4xl font-normal leading-tight md:text-5xl uppercase tracking-normal">
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal leading-tight uppercase tracking-normal break-words">
             Request a callback
           </h2>
           <p className="mt-5 max-w-md text-base font-normal leading-relaxed text-muted-foreground">
@@ -25,7 +25,7 @@ export function CallbackSection() {
           </p>
         </div>
 
-        <div className="md:col-span-7">
+        <div className="lg:col-span-7">
           {submitted ? (
             <div className="flex min-h-64 flex-col items-center justify-center border border-border/50 p-10 text-center">
               <span className="mb-5 flex h-14 w-14 items-center justify-center border border-border/50">
@@ -85,10 +85,10 @@ export function CallbackSection() {
 
               <button
                 type="submit"
-                className="group inline-flex items-center justify-center gap-3 border border-border/50 bg-transparent px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-md sm:w-fit"
+                className="group inline-flex items-center justify-center gap-3 border border-border/50 bg-transparent px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-md sm:w-fit whitespace-nowrap shrink-0"
               >
                 Request Callback
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
               </button>
             </form>
           )}

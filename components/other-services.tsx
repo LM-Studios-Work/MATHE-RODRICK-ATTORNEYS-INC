@@ -77,8 +77,8 @@ export function OtherServices({ currentServiceSlug }: { currentServiceSlug: stri
         <div className="mb-8 md:mb-16">
           <div>
             <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Explore</p>
-            <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
-              Other Services
+            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+              Other Practice Areas
             </h2>
           </div>
         </div>
@@ -88,14 +88,14 @@ export function OtherServices({ currentServiceSlug }: { currentServiceSlug: stri
           ref={scrollRef}
           onTouchStart={() => setIsInteracted(true)}
           onMouseEnter={() => setIsInteracted(true)}
-          className="flex w-full gap-5 overflow-x-auto pb-8 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-8 md:overflow-visible md:pb-0 md:snap-none no-scrollbar"
+          className="flex w-full gap-5 overflow-x-auto pb-8 snap-x snap-mandatory lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:pb-0 lg:snap-none no-scrollbar"
         >
           {otherServices.map((service, index) => (
             <Link
               key={service.slug}
               href={`/our-services/${service.slug}`}
               aria-label={`Learn more about ${service.title}`}
-              className="group relative flex flex-col justify-end w-[85vw] flex-none shrink-0 snap-center overflow-hidden border border-foreground/20 aspect-square md:w-auto md:aspect-[4/3] bg-background"
+              className="group relative flex flex-col justify-end w-[85vw] sm:w-[60vw] md:w-[45vw] flex-none shrink-0 snap-center overflow-hidden border border-foreground/20 aspect-square lg:w-auto lg:aspect-[4/3] bg-background"
             >
               {/* Background Image */}
               <div 

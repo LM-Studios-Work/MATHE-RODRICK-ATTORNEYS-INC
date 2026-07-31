@@ -5,7 +5,7 @@ const navLinks = [
   { label: "Home", href: "/" },
   { label: "Our Firm", href: "/our-firm" },
   { label: "Our Leader", href: "/our-firm#our-leader" },
-  { label: "Our Services", href: "/our-services" },
+  { label: "Our Practice Areas", href: "/our-services" },
   { label: "Contact", href: "/contact" },
 ]
 
@@ -22,10 +22,10 @@ export function SiteFooter() {
   return (
     <footer className="border-t-2 border-border">
       <div className="w-full px-5 py-16 md:px-8">
-        <div className="grid gap-12 md:grid-cols-12">
+        <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-12">
 
           {/* Brand */}
-          <div className="md:col-span-3">
+          <div className="sm:col-span-1 lg:col-span-3">
             <div className="flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center border border-border/50 text-lg font-thin tracking-widest shadow-sm">
                 RM
@@ -58,7 +58,7 @@ export function SiteFooter() {
           </div>
 
           {/* Quick links */}
-          <div className="md:col-span-2">
+          <div className="sm:col-span-1 lg:col-span-2">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Quick Links</p>
             <ul className="mt-6 space-y-3">
               {navLinks.map((link) => (
@@ -75,8 +75,8 @@ export function SiteFooter() {
           </div>
 
           {/* Services */}
-          <div className="md:col-span-3">
-            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Our Services</p>
+          <div className="sm:col-span-1 lg:col-span-3">
+            <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Our Practice Areas</p>
             <ul className="mt-6 space-y-3">
               {serviceLinks.map((link) => (
                 <li key={link.href}>
@@ -92,7 +92,7 @@ export function SiteFooter() {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-4">
+          <div className="sm:col-span-1 lg:col-span-4">
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Contact</p>
             <ul className="mt-6 space-y-4 text-sm font-light text-muted-foreground">
               <li className="flex gap-3">
@@ -110,7 +110,7 @@ export function SiteFooter() {
               <li className="flex gap-3">
                 <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
                 <a href="tel:+27739083025" className="transition-colors hover:text-foreground">
-                  073 9083025
+                  073 908 3025
                 </a>
               </li>
               <li className="flex gap-3">
