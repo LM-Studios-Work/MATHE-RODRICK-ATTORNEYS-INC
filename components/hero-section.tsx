@@ -52,11 +52,11 @@ export function HeroSection() {
             </ul>
           </div>
 
-          {/* Pill-Shaped CTA Button */}
+          {/* Square CTA Button */}
           <div className="mt-12 sm:mt-16 flex justify-center">
             <Link
               href="/contact"
-              className="group inline-flex items-center justify-center gap-4 rounded-full border border-foreground px-8 sm:px-10 py-3.5 sm:py-4 text-xs sm:text-sm font-medium tracking-[0.2em] uppercase text-foreground transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-lg hover:shadow-white/5 whitespace-nowrap shrink-0"
+              className="group inline-flex items-center justify-center gap-4 border border-foreground px-8 sm:px-10 py-4 text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-foreground transition-all duration-300 hover:bg-foreground hover:text-background hover:shadow-lg whitespace-nowrap shrink-0"
             >
               <span>Contact us</span>
               <span className="inline-flex items-center transition-transform duration-300 group-hover:translate-x-1.5">
