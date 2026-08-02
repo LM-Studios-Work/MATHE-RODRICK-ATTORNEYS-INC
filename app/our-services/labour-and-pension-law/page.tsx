@@ -52,7 +52,7 @@ export default function LabourPensionLawPage() {
             </div>
             <div className="flex items-end lg:col-span-7">
               <p className="border-l border-white/20 pl-6 text-base font-normal leading-relaxed text-white/80 md:text-lg">
-                Respectfully guiding clients through challenging labour litigation, complex workplace disputes, and intricate pension fund regulations with personalised and efficient legal service.
+                We help employees, employers, and fund members navigate workplace disputes, unfair dismissals, and pension fund issues with personalised, efficient legal support.
               </p>
             </div>
           </div>
@@ -69,16 +69,11 @@ export default function LabourPensionLawPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Mathe Rodrick Attorneys Inc is an established and experienced law firm in Johannesburg, deeply committed to ethical legal practices. We understand that workplace disputes and pension fund challenges deeply affect your livelihood, your dignity, and your future financial security.
+                Mathe Rodrick Attorneys Inc is an established law firm in Johannesburg with extensive experience in labour and pension matters. We understand that problems at work or with your pension fund do not just create legal issues. They affect your income, your sense of dignity, and your financial future.
               </p>
               <p>
-                Our dedicated team of lawyers provides a personalised and efficient legal service to employers, employees, and fund members across Gauteng. We have the necessary experience to respectfully guide our clients through challenging labour litigation, complex workplace disputes, and intricate pension fund regulations.
+                Our team provides personalised legal support to employers, employees, and pension fund members across Gauteng. Whether you are dealing with a dismissal, a disciplinary hearing, or a dispute with your retirement fund, we have the experience to help you through it.
               </p>
-              <div className="mt-8 border-l-2 border-foreground pl-6 py-2">
-                <p className="text-xl font-normal italic text-foreground md:text-2xl">
-                  After in depth consultations, our experienced attorneys steer our clients to the best possible solutions, always acting with pure respect for human dignity.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -92,12 +87,12 @@ export default function LabourPensionLawPage() {
                  Labour and Employment Law
                </h2>
                <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                 The employment relationship is a fundamental pillar of personal stability and business success. We tailor our legal approach to protect your workplace rights and ensure fair labour practices are maintained at all times.
+                 Your job is central to your life and your stability. We tailor our approach to protect your workplace rights and make sure that fair labour practices are upheld.
                </p>
             </div>
             <div className="p-5 py-20 md:p-12 lg:p-20 flex flex-col justify-center">
                <p className="mb-8 text-base font-normal leading-relaxed text-muted-foreground">
-                 Our legal experts provide highly capable counsel for a range of workplace matters, including:
+                  We provide experienced legal support for a range of workplace matters, including:
                </p>
                <div className="flex flex-wrap gap-3">
                  {employmentLawAreas.map((area, i) => (
@@ -119,7 +114,7 @@ export default function LabourPensionLawPage() {
                 Resolving Workplace and Pension Disputes
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We use the legal methods most appropriate for your specific circumstances, paying particular attention to the level of conflict, complexity, and urgency involved in your matter.
+                We choose the approach that best fits your situation, taking into account how urgent the matter is, how complex it is, and how much conflict is involved.
               </p>
             </div>
             
@@ -130,7 +125,7 @@ export default function LabourPensionLawPage() {
                 </div>
                 <h3 className="text-2xl font-normal uppercase tracking-wide">Out of Court Options</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  We prioritise efficient resolutions through formal negotiation, mediation, and internal workplace grievance procedures. These methods aim to restore professional harmony and resolve benefit disputes quickly, saving you time and unnecessary emotional strain.
+                   We always look for efficient solutions first through negotiation, mediation, and internal grievance processes. The goal is to resolve the issue quickly, saving you time and unnecessary stress.
                 </p>
               </div>
               
@@ -138,9 +133,9 @@ export default function LabourPensionLawPage() {
                 <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-foreground/20 text-sm font-bold">
                   02
                 </div>
-                <h3 className="text-2xl font-normal uppercase tracking-wide">Statutory Dispute Resolution and Litigation</h3>
+                <h3 className="text-2xl font-normal uppercase tracking-wide">Formal Proceedings and Litigation</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  When an amicable settlement is not viable, we provide formidable formal representation. We proudly advocate for our clients at the Commission for Conciliation, Mediation and Arbitration, the relevant Bargaining Councils, the Labour Court, and the office of the Pension Funds Adjudicator to decisively protect your rights.
+                   When a settlement is not possible, we represent you formally. This includes proceedings at the CCMA, Bargaining Councils, the Labour Court, and the Pension Funds Adjudicator. We are experienced in all of these forums and will fight to protect your rights.
                 </p>
               </div>
             </div>
@@ -156,10 +151,10 @@ export default function LabourPensionLawPage() {
             </h2>
             <div className="mt-8 max-w-2xl space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                Protecting your retirement savings is critical. Navigating the strict regulatory framework of South African pension and provident funds requires highly specialised legal knowledge.
+                Your retirement savings represent years of work. When disputes arise with your pension or provident fund, you need legal support from a team that understands how these funds operate and how to hold them accountable.
               </p>
               <p>
-                Our firm provides compassionate and highly efficient legal assistance for all pension related disputes, managing the regulatory complexities to protect your financial future.
+                We provide focused, efficient legal help for all pension-related disputes, handling the regulatory side so you can focus on getting the outcome you are entitled to.
               </p>
             </div>
           </div>
@@ -168,17 +163,17 @@ export default function LabourPensionLawPage() {
         {/* Comprehensive Pension Services */}
         <section className="border-b border-foreground">
           <div className="w-full px-5 py-20 md:px-8 md:py-28">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Practice Areas</p>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Comprehensive Pension Practice Areas
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We manage the legal and regulatory complexities so you can achieve resolution and protect your retirement benefits.
+                We handle the legal and regulatory details so you can achieve a resolution and protect the retirement benefits you have worked for.
               </p>
             </div>
 
-            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
+            <ul className="mt-12 md:mt-16 space-y-2 max-w-3xl mx-auto">
               {pensionServices.map((service, index) => (
                 <li 
                   key={index}
@@ -203,7 +198,7 @@ export default function LabourPensionLawPage() {
                 Principled Counsel For Your Livelihood
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                Whether you are navigating an unfair labour practice, structuring executive employment agreements, or contesting an unfair pension benefit decision, we are here to provide clear, honest, and effective legal support.
+                Whether you are dealing with an unfair dismissal, putting employment contracts in place, or challenging a pension fund decision that does not add up, we are here to provide clear, honest, and effective legal support.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">

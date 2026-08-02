@@ -51,7 +51,7 @@ export default function CorporateInsolvencyLawPage() {
             </div>
             <div className="flex items-end lg:col-span-7">
               <p className="border-l border-white/20 pl-6 text-base font-normal leading-relaxed text-white/80 md:text-lg">
-                Respectfully guiding clients through challenging commercial litigation, overwhelming contracts, and the heavy burden of insolvency with personalised and efficient legal service.
+                We help businesses and individuals navigate contract disputes, commercial litigation, and the difficult realities of insolvency with personalised, efficient legal support.
               </p>
             </div>
           </div>
@@ -68,16 +68,11 @@ export default function CorporateInsolvencyLawPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Mathe Rodrick Attorneys Inc is an established and experienced law firm in Johannesburg, deeply committed to ethical legal practices. We understand that business disputes and financial distress can threaten your livelihood and peace of mind.
+                Mathe Rodrick Attorneys Inc is an established law firm in Johannesburg with deep experience in corporate and insolvency matters. We understand that business disputes and financial pressure can feel overwhelming, and that inaction only makes things worse.
               </p>
               <p>
-                Our dedicated team of lawyers provides a personalised and efficient legal service to corporate entities and individuals across Gauteng. We have the necessary experience to respectfully guide our clients through challenging commercial litigation, overwhelming contracts, and the heavy burden of insolvency.
+                Our team provides personalised legal support to companies and individuals across Gauteng. Whether you are dealing with a contract dispute, a partnership that has gone wrong, or mounting debts, we have the experience to help you find a way through.
               </p>
-              <div className="mt-8 border-l-2 border-foreground pl-6 py-2">
-                <p className="text-xl font-normal italic text-foreground md:text-2xl">
-                  After in depth consultations, our experienced attorneys steer our clients to the best possible solutions, always acting with pure respect for human dignity.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -91,12 +86,12 @@ export default function CorporateInsolvencyLawPage() {
                  Corporate and Commercial Law
                </h2>
                <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                 Navigating the corporate landscape requires strategic foresight and meticulous attention to detail. We tailor our legal approach to protect your commercial interests while maintaining the integrity of your business operations.
+                 Running a business comes with legal risk at every turn. We help you manage that risk by protecting your commercial interests while keeping your operations on solid ground.
                </p>
             </div>
             <div className="p-5 py-20 md:p-12 lg:p-20 flex flex-col justify-center">
                <p className="mb-8 text-base font-normal leading-relaxed text-muted-foreground">
-                 Our legal experts provide highly capable counsel for a range of matters, including:
+                  We provide experienced legal support across a range of commercial matters, including:
                </p>
                <div className="flex flex-wrap gap-3">
                  {commercialLawAreas.map((area, i) => (
@@ -118,7 +113,7 @@ export default function CorporateInsolvencyLawPage() {
                 Resolving Commercial Disputes
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We use the legal methods most appropriate for your specific commercial circumstances, paying particular attention to the level of conflict, complexity, and urgency involved.
+                We choose the approach that best fits your commercial situation, taking into account the urgency, the complexity, and the relationships at stake.
               </p>
             </div>
             
@@ -129,7 +124,7 @@ export default function CorporateInsolvencyLawPage() {
                 </div>
                 <h3 className="text-2xl font-normal uppercase tracking-wide">Out of Court Options</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  We prioritise efficient resolutions through formal negotiation and mediation. These methods protect your vital business relationships, save time, and significantly reduce overall legal costs.
+                   We look for efficient solutions through negotiation and mediation first. These methods protect your business relationships, save time, and keep legal costs down.
                 </p>
               </div>
               
@@ -139,7 +134,7 @@ export default function CorporateInsolvencyLawPage() {
                 </div>
                 <h3 className="text-2xl font-normal uppercase tracking-wide">Litigation</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  When an out of court settlement is not viable, we provide formidable representation in the High Court and specialised commercial courts to protect your financial interests and your corporate reputation.
+                   When a settlement is not possible, we provide strong representation in the High Court and commercial courts to protect your financial position and your reputation.
                 </p>
               </div>
             </div>
@@ -155,10 +150,10 @@ export default function CorporateInsolvencyLawPage() {
             </h2>
             <div className="mt-8 max-w-2xl space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                Facing financial insolvency is incredibly daunting for both businesses and individuals. Our firm provides compassionate and highly efficient legal assistance during these critical times.
+                When debts become unmanageable, the legal process can feel just as overwhelming as the financial pressure itself. We help both businesses and individuals navigate insolvency with clarity and efficiency.
               </p>
               <p>
-                Whether you are a creditor seeking to recover debts or a debtor needing immediate legal protection, we manage the legal complexities so you can find a clear path forward.
+                Whether you are owed money and need to recover it, or you are in financial distress and need legal protection, we manage the process so you can see a clear way forward.
               </p>
             </div>
           </div>
@@ -167,17 +162,17 @@ export default function CorporateInsolvencyLawPage() {
         {/* Comprehensive Insolvency Services */}
         <section className="border-b border-foreground">
           <div className="w-full px-5 py-20 md:px-8 md:py-28">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Practice Areas</p>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Comprehensive Insolvency Practice Areas
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We manage the legal and financial complexities so you can find a clear path forward with confidence and statutory protection.
+                We handle the legal and financial complexities so you can move forward with confidence and proper legal protection.
               </p>
             </div>
 
-            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
+            <ul className="mt-12 md:mt-16 space-y-2 max-w-3xl mx-auto">
               {insolvencyServices.map((service, index) => (
                 <li 
                   key={index}
@@ -202,7 +197,7 @@ export default function CorporateInsolvencyLawPage() {
                 Principled Counsel For Your Business
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                Whether you are structuring a new commercial venture, resolving a complex contract dispute, or navigating the realities of insolvency, we are here to provide clear, honest, and effective legal support.
+                Whether you are starting a new business venture, resolving a contract dispute, or dealing with the realities of insolvency, we are here to provide clear, honest, and effective legal support.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">

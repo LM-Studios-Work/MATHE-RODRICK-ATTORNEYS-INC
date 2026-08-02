@@ -8,25 +8,25 @@ import { OtherServices } from "@/components/other-services"
 export const metadata: Metadata = {
   title: "General Civil Litigation | Mathe Rodrick Attorneys Inc",
   description:
-    "General civil litigation representation across Johannesburg and Gauteng. We resolve disputes in Magistrate Courts and High Courts with strategic legal counsel.",
+    "Civil litigation attorneys in Johannesburg and Gauteng. We resolve disputes in Magistrate Courts and High Courts with practical, results-driven legal counsel.",
 }
 
 const keyFocusAreas = [
   {
     title: "Contractual Disputes",
-    description: "Enforcement of agreements, breach of contract claims, and commercial disputes between entities."
+    description: "When someone breaks the terms of a contract or agreement, we take action to enforce it or recover what you are owed."
   },
   {
-    title: "Delictual Claims",
-    description: "Claims for damages arising from wrongful acts, negligence, and personal injury."
+    title: "Damage Claims",
+    description: "If you have suffered harm or financial loss because of someone else's negligence or wrongful actions, we help you claim the compensation you deserve."
   },
   {
     title: "Property & Evictions",
-    description: "Resolving property-related conflicts, commercial evictions, and boundary disputes."
+    description: "We handle disputes over property ownership, commercial evictions, and disagreements about boundaries and land use."
   },
   {
     title: "Debt Recovery",
-    description: "Strategic debt collection and recovery for businesses and individuals, including liquidations."
+    description: "We help businesses and individuals recover money that is owed to them, including through formal liquidation proceedings when necessary."
   }
 ]
 
@@ -34,17 +34,17 @@ const ourApproach = [
   {
     icon: Shield,
     title: "Strategic Representation",
-    description: "We do not adopt a one-size-fits-all approach. We analyze the merits, risks, and costs before any proceedings are initiated to ensure the best possible outcome."
+    description: "Every case is different. Before we take any legal action, we sit down with you to assess the strengths of your case, the risks involved, and what it will cost, so there are no surprises."
   },
   {
     icon: Scale,
     title: "Courtroom Excellence",
-    description: "Our attorneys are highly experienced across all forums, from the Magistrate Courts through to the High Courts and Supreme Court of Appeal."
+    description: "Our attorneys have deep experience in the Magistrate Courts, the High Courts, and the Supreme Court of Appeal. When a case goes to court, we are well prepared."
   },
   {
     icon: Briefcase,
     title: "Commercial Reality",
-    description: "We tailor our litigation strategy to align with your objectives and the commercial realities of your situation, always seeking cost-effective resolutions."
+    description: "We shape our approach around your goals and the practical realities of your situation, always looking for the most cost-effective path to resolution."
   }
 ]
 
@@ -72,7 +72,7 @@ export default function GeneralCivilLitigationPage() {
             </div>
             <div className="flex items-end lg:col-span-8">
               <p className="border-l border-foreground/20 pl-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                Civil litigation as it pertains to individuals, corporations, and government entities across the South African court system, from Magistrate Courts to the High Courts.
+                When you have a legal dispute that needs to be resolved through the courts, we represent individuals, businesses, and organisations across Magistrate Courts and High Courts in South Africa.
               </p>
             </div>
           </div>
@@ -89,13 +89,13 @@ export default function GeneralCivilLitigationPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                General civil litigation encompasses a wide array of legal disputes between individuals, corporations, or government entities. In South Africa, these matters are adjudicated across various forums, from the local Magistrate Courts to the High Courts.
+                Civil litigation is a broad term for legal disputes that end up in court. This could be anything from a broken contract to a claim for damages, and these cases are heard in the Magistrate Courts and High Courts across South Africa.
               </p>
               <p>
-                We understand that finding yourself in a civil dispute can be incredibly stressful and highly disruptive to your personal life or business operations. From our offices in Johannesburg, we provide strategic legal counsel to clients across Gauteng to navigate these complexities.
+                We understand that being involved in a legal dispute is stressful and disruptive, whether it is personal or business-related. From our offices in Johannesburg, we advise and represent clients across Gauteng to help you get through it as efficiently as possible.
               </p>
               <p>
-                We approach every single case with a steadfast commitment to resolving conflicts efficiently, protecting your legal rights, and preserving your dignity throughout the entire legal process.
+                We approach every case with a genuine commitment to resolving the dispute efficiently, protecting your rights, and keeping your dignity intact throughout the process.
               </p>
             </div>
           </div>

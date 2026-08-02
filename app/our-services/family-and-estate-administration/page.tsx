@@ -51,7 +51,7 @@ export default function FamilyLawPage() {
             </div>
             <div className="flex items-end lg:col-span-7">
               <p className="border-l border-white/20 pl-6 text-base font-normal leading-relaxed text-white/80 md:text-lg">
-                Respectfully guiding clients through the trauma of family law matters and the emotional weight of estate administration with personalised and efficient legal service.
+                We help clients through the difficulty of family law matters and the emotional weight of administering a loved one's estate, with personal attention and efficient legal service.
               </p>
             </div>
           </div>
@@ -68,16 +68,11 @@ export default function FamilyLawPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Mathe Rodrick Attorneys Inc is an established and experienced law firm in Johannesburg, deeply committed to ethical legal practices. We understand that family disputes and the loss of a loved one are among life&apos;s most challenging events.
+                Mathe Rodrick Attorneys Inc is an established law firm in Johannesburg with deep experience in family law and estate matters. We understand that family disputes and the loss of a loved one are among life&apos;s most difficult experiences.
               </p>
               <p>
-                Our dedicated team of lawyers provides a personalised and efficient legal service to clients across Gauteng. We have the necessary experience to respectfully guide our clients through the trauma of family law matters and the emotional weight of estate administration.
+                Our team provides personalised legal support to clients across Gauteng. We have the experience to guide you through these situations with care, sensitivity, and the efficiency that your circumstances demand.
               </p>
-              <div className="mt-8 border-l-2 border-foreground pl-6 py-2">
-                <p className="text-xl font-normal italic text-foreground md:text-2xl">
-                  After in depth consultations, our experienced attorneys steer our clients to the best possible solutions, always acting with pure respect for human dignity.
-                </p>
-              </div>
             </div>
           </div>
         </section>
@@ -91,12 +86,12 @@ export default function FamilyLawPage() {
                  Full Service Counsel
                </h2>
                <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                 Family law matters typically involve complex parenting and financial disputes. We tailor our approach to your specific legal and emotional needs.
+                 Family law matters often involve difficult questions about children, finances, and the future. We shape our approach around your specific needs, both legal and personal.
                </p>
             </div>
             <div className="p-5 py-20 md:p-12 lg:p-20 flex flex-col justify-center">
                <p className="mb-8 text-base font-normal leading-relaxed text-muted-foreground">
-                 Our legal experts provide highly capable counsel for a range of matters, including:
+                  We provide experienced legal support across a range of family law matters, including:
                </p>
                <div className="flex flex-wrap gap-3">
                  {familyLawAreas.map((area, i) => (
@@ -118,7 +113,7 @@ export default function FamilyLawPage() {
                 Resolving Family Disputes
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We use the legal methods most appropriate for your circumstances, paying particular attention to the level of conflict and urgency.
+                We choose the approach that best fits your situation, taking into account how urgent the matter is and how much conflict is involved.
               </p>
             </div>
             
@@ -129,7 +124,7 @@ export default function FamilyLawPage() {
                 </div>
                 <h3 className="text-2xl font-normal uppercase tracking-wide">Out of Court Options</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  We prioritise amicable resolutions through Negotiation, Mediation, and Collaborative Law. These methods offer privacy, flexibility, and reduced emotional strain.
+                   We always try to settle things through negotiation, mediation, or collaborative law first. These methods give you more privacy, more flexibility, and far less emotional strain than a courtroom battle.
                 </p>
               </div>
               
@@ -139,7 +134,7 @@ export default function FamilyLawPage() {
                 </div>
                 <h3 className="text-2xl font-normal uppercase tracking-wide">Litigation</h3>
                 <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  When an out of court settlement is not possible, we provide formidable formal court representation to protect your interests and your dignity.
+                   When a settlement outside of court is not possible, we provide strong courtroom representation to protect your interests and your dignity.
                 </p>
               </div>
             </div>
@@ -155,10 +150,10 @@ export default function FamilyLawPage() {
             </h2>
             <div className="mt-8 max-w-2xl space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
               <p>
-                The loss of a family member is profoundly difficult. Navigating the legalities of their estate should not add to your burden. Our firm provides compassionate and highly efficient assistance with the administration of deceased estates.
+                Losing a family member is painful enough without having to navigate legal processes on top of it. We handle the administration of deceased estates with compassion and efficiency, so you can focus on your family.
               </p>
               <p>
-                We handle all procedural requirements with the Master of the High Court, ensuring the estate is wound up lawfully, transparently, and without unnecessary delays.
+                We take care of all the requirements with the Master of the High Court, making sure the estate is finalised properly, transparently, and without unnecessary delays.
               </p>
             </div>
           </div>
@@ -167,17 +162,17 @@ export default function FamilyLawPage() {
         {/* Comprehensive Estate Services */}
         <section className="border-b border-foreground">
           <div className="w-full px-5 py-20 md:px-8 md:py-28">
-            <div className="max-w-3xl">
+            <div className="max-w-3xl mx-auto">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Practice Areas</p>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Comprehensive Estate Practice Areas
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We manage the legal and financial complexities so your family can focus on healing.
+                We handle the legal and financial details so that your family can focus on healing.
               </p>
             </div>
 
-            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
+            <ul className="mt-12 md:mt-16 space-y-2 max-w-3xl mx-auto">
               {estateServices.map((service, index) => (
                 <li 
                   key={index}
@@ -202,7 +197,7 @@ export default function FamilyLawPage() {
                 Principled Counsel For Your Family
               </h2>
               <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                Whether you are navigating a divorce, structuring a co-parenting agreement, or administering a deceased estate, we are here to provide clear, compassionate, and effective legal support.
+                Whether you are going through a divorce, putting a co-parenting agreement in place, or dealing with the estate of a loved one who has passed, we are here to help with clear, compassionate, and effective legal support.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">

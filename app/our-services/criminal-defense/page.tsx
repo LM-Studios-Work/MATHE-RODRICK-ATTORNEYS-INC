@@ -8,43 +8,43 @@ import { OtherServices } from "@/components/other-services"
 export const metadata: Metadata = {
   title: "Criminal Defense Attorneys Johannesburg | Bail & Trial | Mathe Rodrick Inc",
   description:
-    "Experienced criminal defense representation across Johannesburg and Gauteng. We provide urgent bail assistance, NPA representations, and courtroom defense in Magistrate and High Courts.",
+    "Criminal defense attorneys in Johannesburg and Gauteng. Urgent bail applications, NPA representations, and strong courtroom defense in Magistrate and High Courts.",
 }
 
 const keyFocusAreas = [
   {
     title: "Urgent Bail Applications",
-    description: "Immediate 24-hour legal intervention for after-hours police station bail, prosecutor bail, and formal court bail hearings across Gauteng."
+    description: "If you or someone you know has been arrested, we can step in immediately. We handle bail at police stations, through prosecutors, and in formal court hearings across Gauteng, any time of day."
   },
   {
     title: "Commercial & Financial Crimes",
-    description: "Strategic defense against allegations of fraud, statutory non-compliance, embezzlement, corruption, and white-collar regulatory inquiries."
+    description: "We defend clients facing charges of fraud, theft, corruption, embezzlement, and other financial crimes with a careful, detail-driven approach."
   },
   {
     title: "General Criminal Litigation",
-    description: "Formidable courtroom representation across Magistrate Courts and High Courts for offenses ranging from assault and theft to driving violations."
+    description: "Strong courtroom representation in Magistrate Courts and High Courts for charges ranging from assault and theft to driving offences."
   },
   {
     title: "NPA Representations",
-    description: "Drafting comprehensive written submissions to the National Prosecuting Authority to seek charge withdrawals or alternative dispute resolutions."
+    description: "We prepare detailed written submissions to the National Prosecuting Authority (NPA), making the case for charges to be withdrawn or resolved without going to trial."
   }
 ]
 
 const ourApproach = [
   {
     icon: Shield,
-    title: "Immediate Constitutional Protection",
-    description: "From the moment of arrest or questioning, we intervene swiftly to shield your constitutional rights, prevent unlawful detention, and protect your dignity."
+    title: "Protecting Your Rights from Day One",
+    description: "From the moment you are arrested or called in for questioning, we step in to protect your rights, prevent unlawful detention, and make sure you are treated fairly."
   },
   {
     icon: Scale,
-    title: "Rigorous Evidential Scrutiny",
-    description: "We scrutinize every aspect of the State's evidence, challenging procedural irregularities and witness testimony across Magistrate and High Court forums."
+    title: "Thorough Evidence Review",
+    description: "We go through every piece of the State's evidence with a fine-tooth comb, looking for weaknesses, procedural errors, and inconsistencies in witness testimony."
   },
   {
     icon: Briefcase,
-    title: "Strategic Mitigation & Advocacy",
-    description: "We pursue early resolutions through formal representations to prosecutors, seeking charge dismissals or favorable outcomes before trial proceedings escalate."
+    title: "Early Resolution & Advocacy",
+    description: "Where possible, we work to resolve matters before trial by engaging directly with prosecutors to seek charge withdrawals or more favourable outcomes."
   }
 ]
 
@@ -72,7 +72,7 @@ export default function CriminalDefensePage() {
             </div>
             <div className="flex items-end lg:col-span-8">
               <p className="border-l border-foreground/20 pl-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                Resilient criminal defense representation across Johannesburg and Gauteng, providing urgent 24-hour bail intervention and formidable courtroom advocacy in Magistrate and High Courts.
+                Criminal defense across Johannesburg and Gauteng. We are available around the clock for urgent bail applications and provide strong representation in Magistrate and High Courts.
               </p>
             </div>
           </div>
@@ -89,13 +89,13 @@ export default function CriminalDefensePage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Criminal defense in South Africa demands an intricate understanding of constitutional rights, statutory offenses, and procedural rules under the Criminal Procedure Act. When an individual or corporation is targeted by a police investigation, facing imminent arrest, or formal criminal prosecution, the legal stakes are paramount, directly threatening personal liberty, professional standing, and financial security.
+                Being investigated, arrested, or charged with a crime is one of the most stressful experiences a person can face. Your freedom, your reputation, and your livelihood are all on the line. The South African criminal justice system is complex, and the consequences of not having proper legal support can be severe.
               </p>
               <p>
-                Operating from our Johannesburg offices, Mathe Rodrick Attorneys Inc provides resilient, strategic legal representation to clients across Gauteng and beyond. We understand that navigating the criminal justice system can be profoundly intimidating and traumatic, which is why we stand between our clients and the coercive power of the State from the earliest moment of questioning through to final judicial resolution.
+                At Mathe Rodrick Attorneys Inc in Johannesburg, we represent clients across Gauteng and beyond. We know how overwhelming the criminal process can be, and that is exactly why we get involved early. From the first moment of police questioning right through to the final outcome, we are there to protect you.
               </p>
               <p>
-                Our approach to criminal advocacy is rooted in constitutional principles and rigorous evidential scrutiny. Whether securing urgent bail at police stations and courts, defending against complex financial or commercial crime allegations, or conducting formidable courtroom litigation in the Magistrate Courts and High Courts, we ensure that your rights are fiercely protected at every procedural stage.
+                Whether we are getting you out on bail, defending you against fraud or commercial crime allegations, or representing you at trial, our focus stays the same: protect your rights at every stage. We prepare thoroughly, challenge the State's case where it is weak, and fight for the best possible outcome.
               </p>
             </div>
           </div>

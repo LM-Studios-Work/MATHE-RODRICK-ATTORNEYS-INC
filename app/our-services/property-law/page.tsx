@@ -8,25 +8,25 @@ import { OtherServices } from "@/components/other-services"
 export const metadata: Metadata = {
   title: "Property Law & Eviction Attorneys Johannesburg | Mathe Rodrick Inc",
   description:
-    "Comprehensive property law representation across Johannesburg and Gauteng. We resolve eviction disputes, lease conflicts, and real estate transactions with strategic legal counsel.",
+    "Property law services across Johannesburg and Gauteng. We handle evictions, lease disputes, and real estate transactions with clear, effective legal counsel.",
 }
 
 const keyFocusAreas = [
   {
     title: "Evictions & Rental Disputes",
-    description: "Lawful eviction applications under the PIE Act, commercial lease cancellations, and recovery of rental arrears in Magistrate and High Courts."
+    description: "We handle eviction applications under the PIE Act, lease cancellations, and the recovery of unpaid rent through the courts."
   },
   {
     title: "Contractual Property Transactions",
-    description: "Drafting, reviewing, and structuring residential and commercial property agreements of sale, lease deeds, and property development compliance."
+    description: "We draft, review, and negotiate sale agreements, lease contracts, and compliance documents for both residential and commercial properties."
   },
   {
     title: "Sectional Title & Scheme Disputes",
-    description: "Resolving conflicts involving bodies corporate, homeowners' associations, management rules, and levy collection proceedings."
+    description: "We resolve disputes between owners, bodies corporate, and homeowners' associations, including issues around management rules and unpaid levies."
   },
   {
     title: "Boundary & Servitude Claims",
-    description: "Strategic legal representation for property line encroachments, easement disagreements, and municipal land use rights across Gauteng."
+    description: "We represent clients in disputes over property boundaries, rights of way, and municipal land use across Gauteng."
   }
 ]
 
@@ -34,17 +34,17 @@ const ourApproach = [
   {
     icon: Shield,
     title: "Asset Protection",
-    description: "We treat every property transaction and dispute with meticulous care, recognizing that real estate often represents your most substantial financial asset and investment."
+    description: "Your property is likely one of your biggest investments. We treat every transaction and dispute with the care that kind of financial weight deserves."
   },
   {
     icon: Scale,
     title: "Balanced Dispute Resolution",
-    description: "Whether navigating an eviction or a sectional title dispute, we prioritize efficient out-of-court solutions while remaining fully prepared for decisive courtroom advocacy."
+    description: "Whether it is an eviction or a sectional title issue, we always look for a practical resolution first. But if court is necessary, we are fully prepared to go there."
   },
   {
     icon: Briefcase,
     title: "Commercial & Residential Insight",
-    description: "Our legal strategy is customized to the specific realities of Gauteng's dynamic property market, ensuring full statutory compliance and cost-effective outcomes."
+    description: "Our strategy accounts for the realities of the Gauteng property market, keeping you legally compliant while controlling costs."
   }
 ]
 
@@ -72,7 +72,7 @@ export default function PropertyLawPage() {
             </div>
             <div className="flex items-end lg:col-span-8">
               <p className="border-l border-foreground/20 pl-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                Comprehensive legal counsel for residential and commercial property transactions, lease structuring, sectional title disputes, and lawful evictions across Johannesburg and Gauteng.
+                Legal support for buying, selling, leasing, and protecting property across Johannesburg and Gauteng. From evictions to sectional title disputes, we help you deal with every stage of property ownership.
               </p>
             </div>
           </div>
@@ -89,13 +89,13 @@ export default function PropertyLawPage() {
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Property law in South Africa is a multifaceted legal domain that governs the rights, interests, and obligations associated with immovable property. Whether involving residential estates, commercial developments, sectional title schemes, or agricultural land, real estate transactions and disputes require meticulous adherence to statutory frameworks such as the Prevention of Illegal Eviction from and Unlawful Occupation of Land Act (PIE), the Sectional Titles Act, and the Alienation of Land Act.
+                Property law in South Africa covers everything from buying and selling homes to managing commercial leases and resolving disputes with neighbours. Whether you own a house, run a business from a leased property, or hold a unit in a sectional title complex, there are specific laws that protect your rights, including the PIE Act, the Sectional Titles Act, and the Alienation of Land Act.
               </p>
               <p>
-                At Mathe Rodrick Attorneys Inc in Johannesburg, we recognise that property represents one of the most substantial financial investments for individuals, businesses, and investors across Gauteng. Unresolved lease conflicts, boundary encroachments, or unlawful occupation can severely disrupt commercial operations and personal livelihoods, demanding decisive, well-structured legal intervention.
+                At Mathe Rodrick Attorneys Inc in Johannesburg, we understand that property is personal. It is where you live, where you work, and often your biggest financial commitment. When lease disputes, boundary disagreements, or unlawful occupation threaten that investment, you need a legal team that can step in quickly and get it sorted.
               </p>
               <p>
-                Our legal team provides strategic counsel across the full spectrum of real estate matters. From drafting and negotiating watertight commercial and residential leases to handling lawful eviction applications in the Magistrate Courts and High Courts, we protect your property rights with efficiency, precision, and a steadfast respect for human dignity.
+                Our team handles the full range of property matters. We draft and negotiate leases, manage sale transactions, and handle eviction applications in the Magistrate Courts and High Courts. We work with precision, but we also work with respect for everyone involved.
               </p>
             </div>
           </div>
