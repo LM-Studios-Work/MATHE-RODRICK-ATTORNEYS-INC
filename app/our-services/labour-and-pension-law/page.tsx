@@ -85,6 +85,11 @@ export default function LabourPensionLawPage() {
         blurb:
           "Whether you are dealing with an unfair dismissal, putting employment contracts in place, or challenging a pension fund decision that does not add up, we are here to provide clear, honest, and effective legal support.",
       }}
+      imagePlaceholder={{
+        suggestion:
+          "A wide landscape photo that reflects the world of work works well here — for example an attorney advising an employee, a CCMA-style hearing table, or a professional in the workplace.",
+        suggestedPath: "/images/labour-law-band.jpg",
+      }}
     />
   )
 }

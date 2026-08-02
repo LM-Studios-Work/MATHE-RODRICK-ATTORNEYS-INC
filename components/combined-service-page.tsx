@@ -3,6 +3,7 @@ import { ArrowRight } from "lucide-react"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { OtherServices } from "@/components/other-services"
+import { ServiceImagePlaceholder } from "@/components/service-image-placeholder"
 
 export interface ServiceChapter {
   /** Anchor id used by the index links, e.g. "corporate-law" */
@@ -46,6 +47,11 @@ export interface CombinedServicePageProps {
     title: string
     blurb: string
   }
+  /** Optional guidance for the mid-page photo placeholder */
+  imagePlaceholder?: {
+    suggestion: string
+    suggestedPath: string
+  }
   currentServiceSlug: string
 }
 
@@ -59,6 +65,7 @@ export function CombinedServicePage({
   chapters,
   disputeResolution,
   cta,
+  imagePlaceholder,
   currentServiceSlug,
 }: CombinedServicePageProps) {
   return (
@@ -103,6 +110,16 @@ export function CombinedServicePage({
             </div>
           </div>
         </section>
+
+        {/* Mid-page image band — replace with a real photo when ready */}
+        <ServiceImagePlaceholder
+          eyebrow="Image Placeholder"
+          suggestion={
+            imagePlaceholder?.suggestion ??
+            "A photo that reinforces this practice area works well here — for example the team in discussion, a handshake with a client, or the Johannesburg office. Keep it wide (landscape) so it fills this band cleanly."
+          }
+          suggestedPath={imagePlaceholder?.suggestedPath ?? "/images/your-image-name.jpg"}
+        />
 
         {/* What this page covers — the signpost */}
         <section className="border-b border-foreground bg-foreground/[0.02]">
