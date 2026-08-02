@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
-import { useEffect, useRef, useState } from "react"
+import { useRef, useState, MouseEvent } from "react"
 
 export const ALL_SERVICES = [
   {
@@ -44,58 +44,74 @@ export const ALL_SERVICES = [
 ]
 
 export function OtherServices({ currentServiceSlug }: { currentServiceSlug: string }) {
+  // Filter out the current service to show all other practice areas
+  const otherServices = ALL_SERVICES.filter((s) => s.slug !== currentServiceSlug)
+
   const scrollRef = useRef<HTMLDivElement>(null)
-  const [isInteracted, setIsInteracted] = useState(false)
+  const [isDragging, setIsDragging] = useState(false)
+  const [startX, setStartX] = useState(0)
+  const [scrollLeft, setScrollLeft] = useState(0)
+  const [hasDragged, setHasDragged] = useState(false)
 
-  // Filter out the current service and take 3
-  const otherServices = ALL_SERVICES.filter((s) => s.slug !== currentServiceSlug).slice(0, 3)
+  const onMouseDown = (e: MouseEvent) => {
+    if (!scrollRef.current) return
+    setIsDragging(true)
+    setHasDragged(false)
+    setStartX(e.pageX - scrollRef.current.offsetLeft)
+    setScrollLeft(scrollRef.current.scrollLeft)
+  }
 
-  useEffect(() => {
-    // Only auto-scroll on mobile devices
-    if (typeof window !== "undefined" && window.innerWidth >= 768) return;
+  const onMouseLeave = () => {
+    setIsDragging(false)
+  }
 
-    const scrollContainer = scrollRef.current
-    if (!scrollContainer || isInteracted) return
+  const onMouseUp = () => {
+    setIsDragging(false)
+  }
 
-    const intervalId = setInterval(() => {
-      if (scrollContainer) {
-        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 10) {
-          scrollContainer.scrollTo({ left: 0, behavior: 'smooth' })
-        } else {
-          // scroll right by 1 element width approx
-          scrollContainer.scrollBy({ left: window.innerWidth * 0.85, behavior: 'smooth' })
-        }
-      }
-    }, 3500)
-
-    return () => clearInterval(intervalId)
-  }, [isInteracted])
+  const onMouseMove = (e: MouseEvent) => {
+    if (!isDragging || !scrollRef.current) return
+    e.preventDefault()
+    setHasDragged(true)
+    const x = e.pageX - scrollRef.current.offsetLeft
+    const walk = (x - startX) * 2 // Scroll-fast
+    scrollRef.current.scrollLeft = scrollLeft - walk
+  }
 
   return (
-    <section className="border-b border-foreground">
-      <div className="px-5 py-20 md:px-8 md:py-28">
-        <div className="mb-8 md:mb-16">
-          <div>
-            <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Explore</p>
-            <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
-              Other Practice Areas
-            </h2>
-          </div>
+    <section className="border-b border-foreground bg-background">
+      <div className="py-20 md:py-28">
+        <div className="px-5 md:px-8 mb-8 md:mb-16">
+          <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Explore</p>
+          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+            Other Practice Areas
+          </h2>
         </div>
         
-        {/* Mobile: horizontal scroll, Desktop: grid */}
+        {/* Horizontal scrollable container for all devices */}
         <div 
           ref={scrollRef}
-          onTouchStart={() => setIsInteracted(true)}
-          onMouseEnter={() => setIsInteracted(true)}
-          className="flex w-full gap-5 overflow-x-auto pb-8 snap-x snap-mandatory lg:grid lg:grid-cols-3 lg:gap-8 lg:overflow-visible lg:pb-0 lg:snap-none no-scrollbar"
+          onMouseDown={onMouseDown}
+          onMouseLeave={onMouseLeave}
+          onMouseUp={onMouseUp}
+          onMouseMove={onMouseMove}
+          className={`flex w-full gap-5 overflow-x-auto px-5 md:px-8 pb-8 no-scrollbar select-none ${
+            isDragging ? 'cursor-grabbing snap-none' : 'cursor-grab snap-x snap-mandatory'
+          }`}
+          style={{ scrollBehavior: isDragging ? 'auto' : 'smooth' }}
         >
           {otherServices.map((service, index) => (
             <Link
               key={service.slug}
               href={`/our-services/${service.slug}`}
               aria-label={`Learn more about ${service.title}`}
-              className="group relative flex flex-col justify-end w-[85vw] sm:w-[60vw] md:w-[45vw] flex-none shrink-0 snap-center overflow-hidden border border-foreground/20 aspect-square lg:w-auto lg:aspect-[4/3] bg-background"
+              onClick={(e) => {
+                if (hasDragged) {
+                  e.preventDefault()
+                }
+              }}
+              draggable={false}
+              className="group relative flex flex-col justify-end w-[85vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] xl:w-[25vw] flex-none shrink-0 snap-center overflow-hidden border border-foreground/20 aspect-square bg-background rounded-sm"
             >
               {/* Background Image */}
               <div 
@@ -110,7 +126,7 @@ export function OtherServices({ currentServiceSlug }: { currentServiceSlug: stri
                   <span className="font-sans text-xl font-thin leading-none tracking-tight text-white/70">
                     {String(index + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-3 text-lg font-bold uppercase tracking-widest text-white">
+                  <h3 className="mt-3 text-lg font-bold uppercase tracking-widest text-white leading-snug">
                     {service.title}
                   </h3>
                   <p className="mt-3 text-sm font-normal leading-relaxed text-white/80 line-clamp-2 opacity-0 transform translate-y-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-y-0">

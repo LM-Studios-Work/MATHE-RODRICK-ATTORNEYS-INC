@@ -115,7 +115,7 @@ export function CombinedServicePage({
             </p>
             <div className="mt-8 grid gap-0 border border-foreground md:grid-cols-2">
               {chapters.map((chapter, i) => (
-                <Link
+                <a
                   key={chapter.id}
                   href={`#${chapter.id}`}
                   className={[
@@ -141,7 +141,7 @@ export function CombinedServicePage({
                     aria-hidden="true"
                     strokeWidth={2}
                   />
-                </Link>
+                </a>
               ))}
             </div>
           </div>

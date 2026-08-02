@@ -124,8 +124,23 @@ export function SiteFooter() {
 
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-border-subtle pt-8 text-xs font-bold text-muted-foreground/60 sm:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-6 border-t border-border-subtle pt-8 text-xs font-bold text-muted-foreground/60 sm:flex-row">
           <p>Copyright 2026 Mathe Rodrick Attorneys Inc. All rights reserved.</p>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/privacy-policy"
+              className="uppercase tracking-[0.2em] transition-colors hover:text-foreground"
+            >
+              Privacy Policy
+            </Link>
+            <span className="h-3 w-px bg-muted-foreground/30" />
+            <Link
+              href="/cookie-policy"
+              className="uppercase tracking-[0.2em] transition-colors hover:text-foreground"
+            >
+              Cookie Policy
+            </Link>
+          </div>
           <p className="tracking-[0.2em] uppercase">Justice with dignity</p>
         </div>
       </div>
