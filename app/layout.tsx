@@ -33,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`bg-background ${montserrat.variable} ${cormorant.variable}`}>
-      <body className="font-sans antialiased">
+      <body className="font-sans antialiased overflow-x-clip relative">
         <SmoothScrolling>{children}</SmoothScrolling>
         <WhatsAppButton />
       </body>
