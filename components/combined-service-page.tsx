@@ -47,6 +47,11 @@ export interface CombinedServicePageProps {
     title: string
     blurb: string
   }
+  /** Optional guidance for the mid-page photo placeholder */
+  imagePlaceholder?: {
+    suggestion: string
+    suggestedPath: string
+  }
   /** Actual mid-page photo */
   image?: {
     src: string
