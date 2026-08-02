@@ -2,27 +2,50 @@ import { Metadata } from "next"
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Scale, Shield, Briefcase } from "lucide-react"
 import { OtherServices } from "@/components/other-services"
 
 export const metadata: Metadata = {
-  title: "Criminal Defense | Mathe Rodrick Attorneys Inc",
-  description: "Mathe Rodrick Attorneys Inc provides expert legal services in Criminal Defense, bail applications, police investigations, and courtroom representation in Johannesburg and Gauteng.",
+  title: "Criminal Defense Attorneys Johannesburg | Bail & Trial | Mathe Rodrick Inc",
+  description:
+    "Experienced criminal defense representation across Johannesburg and Gauteng. We provide urgent bail assistance, NPA representations, and courtroom defense in Magistrate and High Courts.",
 }
 
-const criminalLawAreas = [
-  "General Criminal Offenses",
-  "Corporate & Commercial Crimes",
-  "Fraud & Financial Crimes",
-  "Assault & Violent Crimes",
-  "Driving Offenses",
-  "Statutory Violations"
+const keyFocusAreas = [
+  {
+    title: "Urgent Bail Applications",
+    description: "Immediate 24-hour legal intervention for after-hours police station bail, prosecutor bail, and formal court bail hearings across Gauteng."
+  },
+  {
+    title: "Commercial & Financial Crimes",
+    description: "Strategic defense against allegations of fraud, statutory non-compliance, embezzlement, corruption, and white-collar regulatory inquiries."
+  },
+  {
+    title: "General Criminal Litigation",
+    description: "Formidable courtroom representation across Magistrate Courts and High Courts for offenses ranging from assault and theft to driving violations."
+  },
+  {
+    title: "NPA Representations",
+    description: "Drafting comprehensive written submissions to the National Prosecuting Authority to seek charge withdrawals or alternative dispute resolutions."
+  }
 ]
 
-const bailAndUrgentServices = [
-  "Police Station Bail",
-  "Court Bail Applications",
-  "Rights During Questioning"
+const ourApproach = [
+  {
+    icon: Shield,
+    title: "Immediate Constitutional Protection",
+    description: "From the moment of arrest or questioning, we intervene swiftly to shield your constitutional rights, prevent unlawful detention, and protect your dignity."
+  },
+  {
+    icon: Scale,
+    title: "Rigorous Evidential Scrutiny",
+    description: "We scrutinize every aspect of the State's evidence, challenging procedural irregularities and witness testimony across Magistrate and High Court forums."
+  },
+  {
+    icon: Briefcase,
+    title: "Strategic Mitigation & Advocacy",
+    description: "We pursue early resolutions through formal representations to prosecutors, seeking charge dismissals or favorable outcomes before trial proceedings escalate."
+  }
 ]
 
 export default function CriminalDefensePage() {
@@ -37,155 +60,111 @@ export default function CriminalDefensePage() {
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: "url('/images/Criminal%20Defence%20Hero.webp')" }}
           />
-          <div className="absolute inset-0 bg-black/60" />
+          <div className="absolute inset-0 bg-black/55" />
           <div className="relative z-10 grid w-full gap-12 px-5 py-24 lg:grid-cols-12 md:px-8 md:py-32">
-            <div className="lg:col-span-5">
-              <p className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground text-white/70">
+            <div className="lg:col-span-4">
+              <p className="mb-4 text-sm font-bold uppercase tracking-widest text-muted-foreground">
                 Practice Area
               </p>
-              <h1 className="text-4xl font-normal uppercase leading-tight tracking-normal text-white md:text-5xl lg:text-6xl">
+              <h1 className="text-4xl font-normal uppercase leading-tight tracking-normal text-foreground md:text-5xl lg:text-6xl">
                 Criminal Defense
               </h1>
             </div>
-            <div className="flex items-end lg:col-span-7">
-              <p className="border-l border-white/20 pl-6 text-base font-normal leading-relaxed text-white/80 md:text-lg">
-                Respectfully guiding clients through the trauma of police investigations, difficult bail applications, and complex criminal cases with personalised and efficient legal service.
+            <div className="flex items-end lg:col-span-8">
+              <p className="border-l border-foreground/20 pl-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
+                Resilient criminal defense representation across Johannesburg and Gauteng, providing urgent 24-hour bail intervention and formidable courtroom advocacy in Magistrate and High Courts.
               </p>
             </div>
           </div>
         </section>
 
-        {/* What We Do */}
+        {/* About This Practice Area */}
         <section className="border-b border-foreground">
           <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
             <div className="lg:col-span-4">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Approach</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">The Context</p>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
-                What We Do
+                About This Practice Area
               </h2>
             </div>
             <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground lg:col-span-8 md:text-lg">
               <p>
-                Mathe Rodrick Attorneys Inc is an established and experienced law firm in Johannesburg, deeply committed to ethical legal practices. We understand that facing criminal charges is a profoundly distressing experience that can threaten your liberty, your reputation, and your livelihood.
+                Criminal defense in South Africa demands an intricate understanding of constitutional rights, statutory offenses, and procedural rules under the Criminal Procedure Act. When an individual or corporation is targeted by a police investigation, facing imminent arrest, or formal criminal prosecution, the legal stakes are paramount, directly threatening personal liberty, professional standing, and financial security.
               </p>
               <p>
-                Our dedicated team of lawyers provides a personalised and efficient legal service to individuals and businesses across Gauteng. We have the necessary experience to respectfully guide our clients through the trauma of police investigations, difficult bail applications, and complex criminal cases.
+                Operating from our Johannesburg offices, Mathe Rodrick Attorneys Inc provides resilient, strategic legal representation to clients across Gauteng and beyond. We understand that navigating the criminal justice system can be profoundly intimidating and traumatic, which is why we stand between our clients and the coercive power of the State from the earliest moment of questioning through to final judicial resolution.
               </p>
-              <div className="mt-8 border-l-2 border-foreground pl-6 py-2">
-                <p className="text-xl font-normal italic text-foreground md:text-2xl">
-                  After in depth consultations, our experienced attorneys steer our clients to the best possible solutions, always acting with pure respect for human dignity.
-                </p>
+              <p>
+                Our approach to criminal advocacy is rooted in constitutional principles and rigorous evidential scrutiny. Whether securing urgent bail at police stations and courts, defending against complex financial or commercial crime allegations, or conducting formidable courtroom litigation in the Magistrate Courts and High Courts, we ensure that your rights are fiercely protected at every procedural stage.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Areas of Focus */}
+        <section className="border-b border-foreground">
+          <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
+            <div className="lg:col-span-4">
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Expertise</p>
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+                Matters We Handle
+              </h2>
+            </div>
+            <div className="lg:col-span-8">
+              <div className="grid grid-cols-1 gap-0 border border-foreground sm:grid-cols-2">
+                {keyFocusAreas.map((area, index) => {
+                  const isLastItem = index === keyFocusAreas.length - 1
+                  const isInLastDesktopRow = index >= keyFocusAreas.length - (keyFocusAreas.length % 2 === 0 ? 2 : 1)
+                  const isLeftColumn = index % 2 === 0
+
+                  return (
+                    <div 
+                      key={index} 
+                      className={[
+                        "flex flex-col justify-center p-8 transition-colors duration-200 hover:bg-white/[0.04]",
+                        !isLastItem ? "border-b border-foreground" : "",
+                        isInLastDesktopRow ? "sm:border-b-0" : "",
+                        isLeftColumn ? "sm:border-r sm:border-r-foreground" : "",
+                      ].filter(Boolean).join(" ")}
+                    >
+                      <h3 className="text-sm font-bold uppercase tracking-widest text-foreground">
+                        {area.title}
+                      </h3>
+                      <p className="mt-4 text-sm font-normal leading-relaxed text-muted-foreground">
+                        {area.description}
+                      </p>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
         </section>
 
-        {/* Expert Criminal Representation (Split Layout) */}
-        <section className="border-b border-foreground bg-foreground/[0.02]">
-          <div className="grid w-full gap-0 lg:grid-cols-2">
-            <div className="border-b border-foreground p-5 py-20 lg:border-b-0 lg:border-r md:p-12 lg:p-20">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Criminal Law</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
-                Expert Criminal Representation
+        {/* Our Approach */}
+        <section className="border-b border-foreground">
+          <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
+            <div className="lg:col-span-4">
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Philosophy</p>
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+                How We Approach Criminal Defense
               </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                The South African criminal justice system is intimidating, and navigating it requires a resilient and meticulous legal team. We tailor our approach to aggressively protect your constitutional rights while ensuring you receive a fair trial.
-              </p>
             </div>
-            <div className="p-5 py-20 md:p-12 lg:p-20 flex flex-col justify-center">
-              <p className="mb-8 text-base font-normal leading-relaxed text-muted-foreground">
-                Our legal experts provide highly capable counsel for a range of matters, including:
-              </p>
-              <div className="flex flex-wrap gap-3">
-                {criminalLawAreas.map((area, i) => (
-                  <span key={i} className="border border-foreground/30 px-4 py-2 text-xs font-bold uppercase tracking-widest text-foreground transition-colors hover:bg-foreground hover:text-background cursor-default">
-                    {area}
-                  </span>
+            <div className="lg:col-span-8">
+              <div className="grid gap-12 sm:grid-cols-3">
+                {ourApproach.map((item, index) => (
+                  <div key={index} className="flex flex-col">
+                    <div className="mb-6 flex items-center">
+                      <item.icon className="h-7 w-7 text-foreground" strokeWidth={2.5} />
+                    </div>
+                    <h3 className="text-sm font-bold uppercase tracking-widest text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="mt-4 text-sm font-normal leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  </div>
                 ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Bail Applications and Urgent Assistance (Centered Emphasis) */}
-        <section className="border-b border-foreground">
-          <div className="flex flex-col items-center text-center px-5 py-20 md:px-8 md:py-32">
-            <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Urgent Defense</p>
-            <h2 className="mt-4 max-w-4xl text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl lg:text-6xl">
-              Bail Applications and Urgent Assistance
-            </h2>
-            <div className="mt-8 max-w-2xl space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-              <p>
-                Being arrested is a critical and highly urgent situation. Our firm provides compassionate and highly efficient legal assistance from the very moment of arrest.
-              </p>
-              <p>
-                We manage the immediate legal complexities so you can secure your release as quickly as possible while protecting your constitutional rights.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Comprehensive Bail & Urgent Services */}
-        <section className="border-b border-foreground bg-foreground/[0.02]">
-          <div className="w-full px-5 py-20 md:px-8 md:py-28">
-            <div className="max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Comprehensive Counsel</p>
-              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
-                Bail & Urgent Practice Areas
-              </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                When liberty is at stake, time is critical. We provide immediate, strategic intervention at police stations and courts across Gauteng.
-              </p>
-            </div>
-
-            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
-              {bailAndUrgentServices.map((service, index) => (
-                <li 
-                  key={index}
-                  className="group flex items-center gap-4 border-b border-foreground/15 py-4 md:py-5 last:border-b-0 transition-colors duration-200 hover:border-foreground/40"
-                >
-                  <span className="flex h-2 w-2 shrink-0 bg-foreground transition-transform duration-200 group-hover:scale-125" />
-                  <span className="text-lg md:text-xl font-normal uppercase tracking-wide text-foreground">
-                    {service}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </section>
-
-        {/* Defending Your Rights (Card Layout) */}
-        <section className="border-b border-foreground">
-          <div className="w-full px-5 py-20 md:px-8 md:py-28">
-            <div className="mb-16 max-w-3xl">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Defense Strategy</p>
-              <h2 className="mt-4 text-4xl font-normal uppercase leading-tight tracking-normal md:text-5xl">
-                Defending Your Rights
-              </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-                We use the legal strategies most appropriate for your specific circumstances, paying particular attention to the complexity and severity of the charges against you.
-              </p>
-            </div>
-            
-            <div className="grid w-full gap-8 md:grid-cols-2">
-              <div className="flex flex-col border border-foreground p-8 lg:p-12 bg-background transition-all duration-300 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-                <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-foreground/20 text-sm font-bold">
-                  01
-                </div>
-                <h3 className="text-2xl font-normal uppercase tracking-wide">Early Resolutions</h3>
-                <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  We prioritise resolving matters before a lengthy trial begins. This includes drafting formal written representations to the National Prosecuting Authority to have charges withdrawn or negotiating favourable agreements to reduce your legal exposure.
-                </p>
-              </div>
-              
-              <div className="flex flex-col border border-foreground p-8 lg:p-12 bg-background transition-all duration-300 hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] dark:hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)]">
-                <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-full border border-foreground/20 text-sm font-bold">
-                  02
-                </div>
-                <h3 className="text-2xl font-normal uppercase tracking-wide">Courtroom Litigation</h3>
-                <p className="mt-4 text-base font-normal leading-relaxed text-muted-foreground">
-                  When a trial is inevitable, we provide formidable formal representation in the Magistrate Courts and High Courts. We rigorously test the evidence presented by the State, challenge witness testimony, and vigorously advocate for your acquittal to ensure your freedom and dignity are fully protected.
-                </p>
               </div>
             </div>
           </div>
@@ -195,13 +174,10 @@ export default function CriminalDefensePage() {
         <section className="border-b border-foreground">
           <div className="flex w-full flex-col items-start gap-8 px-5 py-20 lg:flex-row lg:items-center lg:justify-between md:px-8 md:py-28">
             <div className="max-w-2xl flex-1 min-w-0">
-              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Principled Counsel</p>
+              <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Consultation</p>
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
-                Principled Counsel For Your Freedom
+                Need immediate legal defense?
               </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
-                Whether you require urgent assistance with a bail application, are facing a minor regulatory offense, or need defense against a complex commercial crime charge, we are here to provide clear, honest, and effective legal support.
-              </p>
             </div>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-end gap-4 shrink-0 w-full sm:w-auto">
               <Link
@@ -222,4 +198,5 @@ export default function CriminalDefensePage() {
     </div>
   )
 }
+
 
