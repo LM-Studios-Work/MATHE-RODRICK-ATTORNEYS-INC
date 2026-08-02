@@ -51,7 +51,7 @@ export function SiteFooter() {
                   className="text-muted-foreground transition-colors hover:text-foreground"
                   aria-label="Facebook"
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Facebook className="h-5 w-5 text-foreground" strokeWidth={2.5} />
                 </a>
               </div>
             </div>
@@ -96,7 +96,7 @@ export function SiteFooter() {
             <p className="text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">Contact</p>
             <ul className="mt-6 space-y-4 text-sm font-light text-muted-foreground">
               <li className="flex gap-3">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
+                <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
                 <span>
                   Suite 701, 7th Floor
                   <br />
@@ -108,13 +108,13 @@ export function SiteFooter() {
                 </span>
               </li>
               <li className="flex gap-3">
-                <Phone className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <Phone className="h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
                 <a href="tel:+27739083025" className="transition-colors hover:text-foreground">
                   073 908 3025
                 </a>
               </li>
               <li className="flex gap-3">
-                <Mail className="h-4 w-4 shrink-0" aria-hidden="true" />
+                <Mail className="h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
                 <a href="mailto:info@rmatheattorneys.co.za" className="transition-colors hover:text-foreground">
                   info@rmatheattorneys.co.za
                 </a>

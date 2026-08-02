@@ -31,9 +31,7 @@ export function ContactSection() {
         <div className="lg:col-span-7">
           {submitted ? (
             <div className="flex h-full min-h-[500px] flex-col items-center justify-center border border-border/50 p-10 text-center">
-              <span className="mb-5 flex h-14 w-14 items-center justify-center border border-border/50">
-                <Check className="h-6 w-6" aria-hidden="true" />
-              </span>
+              <Check className="mb-5 h-8 w-8 text-foreground" aria-hidden="true" strokeWidth={2.5} />
               <h3 className="text-2xl font-normal uppercase tracking-normal">Thank you</h3>
               <p className="mt-3 max-w-sm font-normal text-muted-foreground">
                 Your inquiry has been received. Our team will review your message and reach out shortly.
@@ -130,7 +128,7 @@ export function ContactSection() {
                   </select>
                   {/* Custom chevron */}
                   <span className="pointer-events-none absolute inset-y-0 right-3 flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted-foreground">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="text-muted-foreground">
                       <polyline points="6 9 12 15 18 9" />
                     </svg>
                   </span>
@@ -156,7 +154,7 @@ export function ContactSection() {
                 className="group mt-4 inline-flex items-center justify-center gap-3 border border-border/50 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-background hover:text-foreground hover:shadow-[0_0_15px_rgba(255,255,255,0.1)] sm:w-fit whitespace-nowrap shrink-0"
               >
                 Send Message
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </button>
             </form>
           )}
@@ -176,9 +174,7 @@ export function ContactSection() {
 
           <ul className="space-y-6 text-sm font-light text-foreground">
             <li className="flex gap-4">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-border/50 bg-background">
-                <MapPin className="h-4 w-4 text-foreground" aria-hidden="true" />
-              </span>
+              <MapPin className="mt-1 h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
               <span className="mt-1 leading-relaxed text-muted-foreground">
                 Suite 701, 7th Floor
                 <br />
@@ -190,17 +186,13 @@ export function ContactSection() {
               </span>
             </li>
             <li className="flex gap-4 items-center">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-border/50 bg-background">
-                <Phone className="h-4 w-4 text-foreground" aria-hidden="true" />
-              </span>
+              <Phone className="h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
               <a href="tel:+27739083025" className="text-muted-foreground transition-colors hover:text-foreground">
                 073 908 3025
               </a>
             </li>
             <li className="flex gap-4 items-center">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-border/50 bg-background">
-                <Mail className="h-4 w-4 text-foreground" aria-hidden="true" />
-              </span>
+              <Mail className="h-5 w-5 shrink-0 text-foreground" aria-hidden="true" strokeWidth={2.5} />
               <a href="mailto:info@rmatheattorneys.co.za" className="text-muted-foreground transition-colors hover:text-foreground">
                 info@rmatheattorneys.co.za
               </a>

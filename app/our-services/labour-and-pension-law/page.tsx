@@ -20,36 +20,12 @@ const employmentLawAreas = [
 ]
 
 const pensionServices = [
-  {
-    num: "01",
-    title: "Unpaid Pension Contributions",
-    description: "Representing employees and fund members in recovering unpaid or under-declared employer pension fund contributions."
-  },
-  {
-    num: "02",
-    title: "Withdrawal Disputes",
-    description: "Resolving contested pension and provident fund withdrawal benefit calculations and payout delays."
-  },
-  {
-    num: "03",
-    title: "Delayed Death Benefits",
-    description: "Navigating Section 37C of the Pension Funds Act to ensure fair and timely distribution of deceased member death benefits."
-  },
-  {
-    num: "04",
-    title: "Fund Compliance Issues",
-    description: "Advising trustees, employers, and fund members on statutory compliance with pension fund rules and regulations."
-  },
-  {
-    num: "05",
-    title: "Pension Funds Adjudicator",
-    description: "Drafting formal complaints and representing claimants before the Office of the Pension Funds Adjudicator."
-  },
-  {
-    num: "06",
-    title: "Surplus Apportionment",
-    description: "Assisting members and beneficiaries with rights and claims regarding pension fund surplus schemes and distributions."
-  }
+  "Unpaid Pension Contributions",
+  "Withdrawal Disputes",
+  "Delayed Death Benefits",
+  "Fund Compliance Issues",
+  "Pension Funds Adjudicator",
+  "Surplus Apportionment"
 ]
 
 export default function LabourPensionLawPage() {
@@ -189,50 +165,32 @@ export default function LabourPensionLawPage() {
           </div>
         </section>
 
-        {/* Comprehensive Pension Services (Structured Grid) */}
+        {/* Comprehensive Pension Services */}
         <section className="border-b border-foreground">
-          <div className="grid w-full gap-0 lg:grid-cols-12">
-            <div className="border-b border-foreground p-5 py-20 lg:col-span-4 lg:border-b-0 lg:border-r md:p-8 lg:p-12 xl:p-16">
+          <div className="w-full px-5 py-20 md:px-8 md:py-28">
+            <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Practice Areas</p>
-              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Comprehensive Pension Practice Areas
               </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
+              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
                 We manage the legal and regulatory complexities so you can achieve resolution and protect your retirement benefits.
               </p>
             </div>
-            
-            <div className="lg:col-span-8">
-              <div className="grid grid-cols-1 gap-0 sm:grid-cols-2">
-                {pensionServices.map((service, index) => {
-                  const isLastItem = index === pensionServices.length - 1
-                  const isInLastDesktopRow = index >= pensionServices.length - (pensionServices.length % 2 === 0 ? 2 : 1)
-                  const isLeftColumn = index % 2 === 0
 
-                  return (
-                    <div 
-                      key={index} 
-                      className={[
-                        "group relative flex flex-col justify-center p-8 transition-colors duration-300 hover:bg-foreground/[0.03]",
-                        !isLastItem ? "border-b border-foreground" : "",
-                        isInLastDesktopRow ? "sm:border-b-0" : "",
-                        isLeftColumn ? "sm:border-r sm:border-r-foreground" : "",
-                      ].filter(Boolean).join(" ")}
-                    >
-                      <span className="absolute right-8 top-8 text-2xl font-light text-foreground/20 transition-colors group-hover:text-foreground/40">
-                        {service.num}
-                      </span>
-                      <h3 className="mt-6 text-sm font-bold uppercase tracking-widest text-foreground">
-                        {service.title}
-                      </h3>
-                      <p className="mt-4 text-sm font-normal leading-relaxed text-muted-foreground pr-8">
-                        {service.description}
-                      </p>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
+            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
+              {pensionServices.map((service, index) => (
+                <li 
+                  key={index}
+                  className="group flex items-center gap-4 border-b border-foreground/15 py-4 md:py-5 last:border-b-0 transition-colors duration-200 hover:border-foreground/40"
+                >
+                  <span className="flex h-2 w-2 shrink-0 bg-foreground transition-transform duration-200 group-hover:scale-125" />
+                  <span className="text-lg md:text-xl font-normal uppercase tracking-wide text-foreground">
+                    {service}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -254,7 +212,7 @@ export default function LabourPensionLawPage() {
                 className="group inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Book a Consultation
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </Link>
             </div>
           </div>

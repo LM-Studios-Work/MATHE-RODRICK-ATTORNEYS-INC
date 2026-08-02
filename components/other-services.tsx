@@ -124,9 +124,9 @@ export function OtherServices({ currentServiceSlug }: { currentServiceSlug: stri
                   </span>
                   <span
                     aria-hidden="true"
-                    className="inline-flex items-center justify-center rounded-full bg-white/10 p-2 text-white backdrop-blur-sm transition-all duration-300 group-hover:bg-white group-hover:text-black"
+                    className="inline-flex items-center text-white transition-all duration-300 group-hover:translate-x-1"
                   >
-                    <ArrowRight className="h-4 w-4" strokeWidth={2} />
+                    <ArrowRight className="h-5 w-5" strokeWidth={2.5} />
                   </span>
                 </div>
               </div>

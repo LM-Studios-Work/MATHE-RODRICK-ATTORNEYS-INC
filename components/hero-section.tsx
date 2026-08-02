@@ -61,7 +61,7 @@ export function HeroSection() {
               <span>Contact us</span>
               <span className="inline-flex items-center transition-transform duration-300 group-hover:translate-x-1.5">
                 <span className="h-px w-6 bg-current inline-block" />
-                <ArrowRight className="-ml-1 h-3.5 w-3.5 shrink-0" strokeWidth={2} />
+                <ArrowRight className="-ml-1 h-4 w-4 shrink-0" strokeWidth={2.5} />
               </span>
             </Link>
           </div>

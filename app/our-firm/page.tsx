@@ -184,8 +184,8 @@ export default function OurFirmPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
               {pillars.map(({ icon: Icon, title, description }) => (
                 <div key={title} className="flex flex-col gap-6 border border-foreground p-8 bg-background">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center border border-foreground/30">
-                    <Icon className="h-4 w-4 text-foreground/60" strokeWidth={1.5} />
+                  <div className="flex shrink-0 items-center">
+                    <Icon className="h-7 w-7 text-foreground" strokeWidth={2.5} />
                   </div>
                   <div>
                     <h3 className="text-xs font-bold uppercase tracking-widest text-foreground">{title}</h3>
@@ -245,14 +245,14 @@ export default function OurFirmPage() {
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 border border-foreground/40 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background whitespace-nowrap shrink-0"
               >
                 Meet Our Leader
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </Link>
               <Link
                 href="/contact"
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Contact Us
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </Link>
             </div>
           </div>

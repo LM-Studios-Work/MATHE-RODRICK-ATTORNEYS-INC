@@ -39,7 +39,7 @@ export function AboutSection() {
             className="group mt-10 inline-flex items-center justify-center gap-3 border border-border/50 px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-md whitespace-nowrap shrink-0"
           >
             Meet Our Firm
-            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
           </Link>
         </div>
       </div>

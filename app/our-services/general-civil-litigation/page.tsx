@@ -154,8 +154,8 @@ export default function GeneralCivilLitigationPage() {
               <div className="grid gap-12 sm:grid-cols-3">
                 {ourApproach.map((item, index) => (
                   <div key={index} className="flex flex-col">
-                    <div className="mb-6 flex h-12 w-12 items-center justify-center border border-foreground/30">
-                      <item.icon className="h-5 w-5 text-foreground/70" strokeWidth={1.5} />
+                    <div className="mb-6 flex items-center">
+                      <item.icon className="h-7 w-7 text-foreground" strokeWidth={2.5} />
                     </div>
                     <h3 className="text-sm font-bold uppercase tracking-widest text-foreground">
                       {item.title}
@@ -185,7 +185,7 @@ export default function GeneralCivilLitigationPage() {
                 className="group inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Book a Consultation
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </Link>
             </div>
           </div>

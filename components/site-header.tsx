@@ -189,14 +189,14 @@ export function SiteHeader() {
               href="tel:+27739083025"
               className="hidden items-center gap-2 border border-border/50 bg-foreground/5 px-3 lg:px-4 py-2 text-[11px] font-medium tracking-[0.15em] lg:tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-lg md:flex whitespace-nowrap shrink-0"
             >
-              <Phone className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+              <Phone className="h-4 w-4 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               <span>073 908 3025</span>
             </a>
 
             <button
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
-              className="relative flex h-10 w-10 items-center justify-center border border-border/50 text-foreground/80 transition-colors hover:border-foreground/80 hover:text-foreground lg:hidden"
+              className="relative flex h-10 w-10 items-center justify-center text-foreground transition-colors hover:text-foreground/80 lg:hidden"
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
               aria-expanded={mobileOpen}
             >
@@ -204,12 +204,12 @@ export function SiteHeader() {
               <span
                 className={`absolute transition-all duration-300 ${mobileOpen ? "rotate-90 scale-100 opacity-100" : "scale-75 rotate-0 opacity-0"}`}
               >
-                <X className="h-5 w-5 font-normal" strokeWidth={1} />
+                <X className="h-6 w-6" strokeWidth={2.5} />
               </span>
               <span
                 className={`absolute transition-all duration-300 ${mobileOpen ? "scale-75 rotate-90 opacity-0" : "scale-100 rotate-0 opacity-100"}`}
               >
-                <Menu className="h-5 w-5 font-normal" strokeWidth={1} />
+                <Menu className="h-6 w-6" strokeWidth={2.5} />
               </span>
             </button>
           </div>
@@ -239,10 +239,10 @@ export function SiteHeader() {
           <button
             type="button"
             onClick={() => setMobileOpen(false)}
-            className="flex h-10 w-10 items-center justify-center border border-transparent text-muted-foreground transition-colors hover:text-foreground"
+            className="flex h-10 w-10 items-center justify-center text-muted-foreground transition-colors hover:text-foreground"
             aria-label="Close menu"
           >
-            <X className="h-5 w-5 font-normal" strokeWidth={1} />
+            <X className="h-6 w-6" strokeWidth={2.5} />
           </button>
         </div>
 
@@ -269,7 +269,7 @@ export function SiteHeader() {
                   <span className={`h-[1px] bg-foreground transition-all duration-300 ${mobileServicesOpen ? 'mr-4 w-6 opacity-100' : 'w-0 opacity-0 group-hover:mr-4 group-hover:w-6 group-hover:opacity-100'}`} />
                   Our Practice Areas
                 </div>
-                <ChevronDown className={`h-4 w-4 text-foreground/60 transition-transform duration-300 ease-out ${mobileServicesOpen ? 'rotate-180 text-foreground' : 'rotate-0'}`} />
+                <ChevronDown className={`h-4 w-4 text-foreground/60 transition-transform duration-300 ease-out ${mobileServicesOpen ? 'rotate-180 text-foreground' : 'rotate-0'}`} strokeWidth={2.5} />
               </button>
 
               {/* Accordion content */}
@@ -331,7 +331,7 @@ export function SiteHeader() {
             href="tel:+27739083025"
             className="group flex items-center justify-center gap-3 border border-border/50 bg-foreground/5 py-4 text-xs font-normal tracking-widest text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-lg"
           >
-            <Phone className="h-4 w-4" strokeWidth={1} />
+            <Phone className="h-4 w-4" strokeWidth={2.5} />
             073 908 3025
           </a>
         </div>

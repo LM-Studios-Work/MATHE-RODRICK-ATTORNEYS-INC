@@ -28,9 +28,7 @@ export function CallbackSection() {
         <div className="lg:col-span-7">
           {submitted ? (
             <div className="flex min-h-64 flex-col items-center justify-center border border-border/50 p-10 text-center">
-              <span className="mb-5 flex h-14 w-14 items-center justify-center border border-border/50">
-                <Check className="h-6 w-6" aria-hidden="true" />
-              </span>
+              <Check className="mb-5 h-8 w-8 text-foreground" aria-hidden="true" strokeWidth={2.5} />
               <h3 className="text-2xl font-normal uppercase tracking-normal">Thank you</h3>
               <p className="mt-3 max-w-sm font-normal text-muted-foreground">
                 Your request has been received. We will be in touch with you shortly.
@@ -88,7 +86,7 @@ export function CallbackSection() {
                 className="group inline-flex items-center justify-center gap-3 border border-border/50 bg-transparent px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-foreground transition-all hover:bg-foreground hover:text-background hover:shadow-md sm:w-fit whitespace-nowrap shrink-0"
               >
                 Request Callback
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </button>
             </form>
           )}

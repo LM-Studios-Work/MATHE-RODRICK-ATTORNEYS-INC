@@ -20,21 +20,9 @@ const criminalLawAreas = [
 ]
 
 const bailAndUrgentServices = [
-  {
-    num: "01",
-    title: "Police Station Bail",
-    description: "Securing urgent bail applications directly at police stations immediately following an arrest to ensure your prompt release."
-  },
-  {
-    num: "02",
-    title: "Court Bail Applications",
-    description: "Representing clients in formal bail applications before Magistrate Courts and High Courts, including opposed bail hearings."
-  },
-  {
-    num: "03",
-    title: "Rights During Questioning",
-    description: "Protecting your constitutional rights during police questioning, searches, and investigative interviews to safeguard against self-incrimination."
-  }
+  "Police Station Bail",
+  "Court Bail Applications",
+  "Rights During Questioning"
 ]
 
 export default function CriminalDefensePage() {
@@ -137,46 +125,32 @@ export default function CriminalDefensePage() {
           </div>
         </section>
 
-        {/* Comprehensive Bail & Urgent Services (Structured Grid) */}
+        {/* Comprehensive Bail & Urgent Services */}
         <section className="border-b border-foreground bg-foreground/[0.02]">
-          <div className="grid w-full gap-0 lg:grid-cols-12">
-            <div className="border-b border-foreground p-5 py-20 lg:col-span-4 lg:border-b-0 lg:border-r md:p-8 lg:p-12 xl:p-16">
+          <div className="w-full px-5 py-20 md:px-8 md:py-28">
+            <div className="max-w-3xl">
               <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Comprehensive Counsel</p>
-              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+              <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
                 Bail & Urgent Practice Areas
               </h2>
-              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground">
+              <p className="mt-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
                 When liberty is at stake, time is critical. We provide immediate, strategic intervention at police stations and courts across Gauteng.
               </p>
             </div>
-            
-            <div className="lg:col-span-8">
-              <div className="grid grid-cols-1 gap-0 sm:grid-cols-3">
-                {bailAndUrgentServices.map((service, index) => {
-                  const isLastItem = index === bailAndUrgentServices.length - 1
 
-                  return (
-                    <div 
-                      key={index} 
-                      className={[
-                        "group relative flex flex-col justify-center p-8 transition-colors duration-300 hover:bg-foreground/[0.03]",
-                        !isLastItem ? "border-b border-foreground sm:border-b-0 sm:border-r sm:border-r-foreground" : "",
-                      ].filter(Boolean).join(" ")}
-                    >
-                      <span className="absolute right-8 top-8 text-2xl font-light text-foreground/20 transition-colors group-hover:text-foreground/40">
-                        {service.num}
-                      </span>
-                      <h3 className="mt-6 text-sm font-bold uppercase tracking-widest text-foreground">
-                        {service.title}
-                      </h3>
-                      <p className="mt-4 text-sm font-normal leading-relaxed text-muted-foreground pr-4">
-                        {service.description}
-                      </p>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
+            <ul className="mt-12 md:mt-16 space-y-2 max-w-4xl">
+              {bailAndUrgentServices.map((service, index) => (
+                <li 
+                  key={index}
+                  className="group flex items-center gap-4 border-b border-foreground/15 py-4 md:py-5 last:border-b-0 transition-colors duration-200 hover:border-foreground/40"
+                >
+                  <span className="flex h-2 w-2 shrink-0 bg-foreground transition-transform duration-200 group-hover:scale-125" />
+                  <span className="text-lg md:text-xl font-normal uppercase tracking-wide text-foreground">
+                    {service}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 
@@ -235,7 +209,7 @@ export default function CriminalDefensePage() {
                 className="group inline-flex items-center justify-center gap-3 bg-foreground px-8 py-4 text-xs font-bold uppercase tracking-[0.2em] text-background transition-all hover:bg-foreground/80 whitespace-nowrap shrink-0"
               >
                 Book a Consultation
-                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={1.5} />
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1 shrink-0" aria-hidden="true" strokeWidth={2.5} />
               </Link>
             </div>
           </div>

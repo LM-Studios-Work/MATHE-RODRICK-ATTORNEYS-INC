@@ -69,12 +69,12 @@ export function ServicesSection() {
                 </h3>
               </div>
 
-              {/* Right: arrow button — clickable signifier matching site style */}
+              {/* Right: arrow icon — clean and bold without box */}
               <span
                 aria-hidden="true"
-                className="flex shrink-0 items-center gap-2 border border-foreground/40 px-3 py-2 text-[0.6rem] font-bold uppercase tracking-[0.15em] text-foreground/50 transition-all duration-200 group-hover:border-foreground group-hover:bg-foreground group-hover:text-background"
+                className="flex shrink-0 items-center text-foreground/50 transition-all duration-200 group-hover:text-foreground group-hover:translate-x-1"
               >
-                <ArrowRight className="h-3 w-3" strokeWidth={2} />
+                <ArrowRight className="h-5 w-5" strokeWidth={2.5} />
               </span>
             </Link>
           )
