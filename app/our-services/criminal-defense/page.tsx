@@ -102,11 +102,14 @@ export default function CriminalDefensePage() {
           </div>
         </section>
 
-        {/* Mid-page image band — replace with a real photo when ready */}
-        <ServiceImagePlaceholder
-          suggestion="A wide landscape photo that conveys defense and protection works well here — for example an attorney advising a client, a courthouse exterior, or a serious consultation. Landscape orientation fills this band best."
-          suggestedPath="/images/criminal-defense-band.jpg"
-        />
+        {/* Mid-page image band */}
+        <section className="border-b border-foreground">
+          <img
+            src="/service%20page%20placeholders/criminal%20law%20placeholder.webp"
+            alt="Criminal defense representation"
+            className="aspect-square w-full object-cover brightness-95 md:object-top md:aspect-auto md:h-[500px]"
+          />
+        </section>
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">

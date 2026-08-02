@@ -84,10 +84,13 @@ export default function CorporateInsolvencyLawPage() {
         blurb:
           "Whether you are starting a new business venture, resolving a contract dispute, or dealing with the realities of insolvency, we are here to provide clear, honest, and effective legal support.",
       }}
-      imagePlaceholder={{
-        suggestion:
-          "A wide landscape photo that signals corporate credibility works best here — for example a boardroom meeting, the team reviewing contracts, or a modern Johannesburg office exterior.",
-        suggestedPath: "/images/corporate-law-band.jpg",
+      image={{
+        src: "/service%20page%20placeholders/corporate%20law.webp",
+        alt: "Boardroom meeting for corporate law",
+      }}
+      secondaryImage={{
+        src: "/service%20page%20placeholders/insolvency%20liquidation,%20last%20image%20on%20the%20page%20placeholder.webp",
+        alt: "Insolvency and liquidation representation",
       }}
     />
   )

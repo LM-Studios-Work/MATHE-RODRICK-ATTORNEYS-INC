@@ -47,10 +47,22 @@ export interface CombinedServicePageProps {
     title: string
     blurb: string
   }
-  /** Optional guidance for the mid-page photo placeholder */
-  imagePlaceholder?: {
+  /** Actual mid-page photo */
+  image?: {
+    src: string
+    alt: string
+    className?: string
+  }
+  /** Optional secondary guidance for an additional mid-page photo placeholder */
+  secondaryImagePlaceholder?: {
     suggestion: string
     suggestedPath: string
+  }
+  /** Actual secondary mid-page photo */
+  secondaryImage?: {
+    src: string
+    alt: string
+    className?: string
   }
   currentServiceSlug: string
 }
@@ -66,6 +78,9 @@ export function CombinedServicePage({
   disputeResolution,
   cta,
   imagePlaceholder,
+  image,
+  secondaryImagePlaceholder,
+  secondaryImage,
   currentServiceSlug,
 }: CombinedServicePageProps) {
   return (
@@ -112,14 +127,24 @@ export function CombinedServicePage({
         </section>
 
         {/* Mid-page image band — replace with a real photo when ready */}
-        <ServiceImagePlaceholder
-          eyebrow="Image Placeholder"
-          suggestion={
-            imagePlaceholder?.suggestion ??
-            "A photo that reinforces this practice area works well here — for example the team in discussion, a handshake with a client, or the Johannesburg office. Keep it wide (landscape) so it fills this band cleanly."
-          }
-          suggestedPath={imagePlaceholder?.suggestedPath ?? "/images/your-image-name.jpg"}
-        />
+        {image ? (
+          <section className="border-b border-foreground">
+            <img
+              src={image.src}
+              alt={image.alt}
+              className={`aspect-square w-full object-cover brightness-95 md:aspect-auto md:h-[500px] ${image.className ?? ""}`}
+            />
+          </section>
+        ) : (
+          <ServiceImagePlaceholder
+            eyebrow="Image Placeholder"
+            suggestion={
+              imagePlaceholder?.suggestion ??
+              "A photo that reinforces this practice area works well here — for example the team in discussion, a handshake with a client, or the Johannesburg office. Keep it wide (landscape) so it fills this band cleanly."
+            }
+            suggestedPath={imagePlaceholder?.suggestedPath ?? "/images/your-image-name.jpg"}
+          />
+        )}
 
         {/* What this page covers — the signpost */}
         <section className="border-b border-foreground bg-foreground/[0.02]">
@@ -224,6 +249,23 @@ export function CombinedServicePage({
             </div>
           </section>
         ))}
+
+        {/* Secondary mid-page image band (Optional) */}
+        {secondaryImage ? (
+          <section className="border-b border-foreground">
+            <img
+              src={secondaryImage.src}
+              alt={secondaryImage.alt}
+              className={`aspect-square w-full object-cover brightness-95 md:aspect-auto md:h-[500px] ${secondaryImage.className ?? ""}`}
+            />
+          </section>
+        ) : secondaryImagePlaceholder ? (
+          <ServiceImagePlaceholder
+            eyebrow="Secondary Image Placeholder"
+            suggestion={secondaryImagePlaceholder.suggestion}
+            suggestedPath={secondaryImagePlaceholder.suggestedPath}
+          />
+        ) : null}
 
         {/* How We Resolve Disputes — shared approach block */}
         <section className="border-b border-foreground">

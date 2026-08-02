@@ -102,11 +102,14 @@ export default function GeneralCivilLitigationPage() {
           </div>
         </section>
 
-        {/* Mid-page image band — replace with a real photo when ready */}
-        <ServiceImagePlaceholder
-          suggestion="A wide landscape photo that signals the courtroom or dispute resolution works well here — for example a courthouse exterior, an attorney at a case-file desk, or a negotiation across a table. Landscape orientation fills this band best."
-          suggestedPath="/images/litigation-band.jpg"
-        />
+        {/* Mid-page image band */}
+        <section className="border-b border-foreground">
+          <img
+            src="/service%20page%20placeholders/case%20file%20desk%20general%20civil%20litigation.webp"
+            alt="General civil litigation case files"
+            className="aspect-square w-full object-cover brightness-95 md:object-top md:aspect-auto md:h-[500px]"
+          />
+        </section>
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">

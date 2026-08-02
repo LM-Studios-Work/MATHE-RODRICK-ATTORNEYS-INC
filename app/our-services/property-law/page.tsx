@@ -102,11 +102,14 @@ export default function PropertyLawPage() {
           </div>
         </section>
 
-        {/* Mid-page image band — replace with a real photo when ready */}
-        <ServiceImagePlaceholder
-          suggestion="A wide landscape photo tied to property works well here — for example a residential or commercial building, a property handover, or a client signing a lease. Landscape orientation fills this band best."
-          suggestedPath="/images/property-law-band.jpg"
-        />
+        {/* Mid-page image band */}
+        <section className="border-b border-foreground">
+          <img
+            src="/service%20page%20placeholders/property%20law%20placeholder.webp"
+            alt="Property law and real estate"
+            className="aspect-square w-full object-cover brightness-95 md:object-[center_41%] md:aspect-auto md:h-[500px]"
+          />
+        </section>
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">
