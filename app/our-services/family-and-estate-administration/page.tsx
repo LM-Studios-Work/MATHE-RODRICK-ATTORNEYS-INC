@@ -84,6 +84,11 @@ export default function FamilyLawPage() {
         blurb:
           "Whether you are going through a divorce, putting a co-parenting agreement in place, or dealing with the estate of a loved one who has passed, we are here to help with clear, compassionate, and effective legal support.",
       }}
+      imagePlaceholder={{
+        suggestion:
+          "A warm, wide landscape photo suits this sensitive practice area — for example a compassionate client meeting, hands signing documents, or a calm consultation setting. Avoid anything too corporate or cold.",
+        suggestedPath: "/images/family-law-band.jpg",
+      }}
     />
   )
 }

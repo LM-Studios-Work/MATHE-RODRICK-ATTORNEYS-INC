@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { ArrowRight, Scale, Shield, Briefcase } from "lucide-react"
 import { OtherServices } from "@/components/other-services"
+import { ServiceImagePlaceholder } from "@/components/service-image-placeholder"
 
 export const metadata: Metadata = {
   title: "General Civil Litigation | Mathe Rodrick Attorneys Inc",
@@ -100,6 +101,12 @@ export default function GeneralCivilLitigationPage() {
             </div>
           </div>
         </section>
+
+        {/* Mid-page image band — replace with a real photo when ready */}
+        <ServiceImagePlaceholder
+          suggestion="A wide landscape photo that signals the courtroom or dispute resolution works well here — for example a courthouse exterior, an attorney at a case-file desk, or a negotiation across a table. Landscape orientation fills this band best."
+          suggestedPath="/images/litigation-band.jpg"
+        />
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">

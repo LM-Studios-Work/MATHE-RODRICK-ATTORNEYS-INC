@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { ArrowRight, Scale, Shield, Briefcase } from "lucide-react"
 import { OtherServices } from "@/components/other-services"
+import { ServiceImagePlaceholder } from "@/components/service-image-placeholder"
 
 export const metadata: Metadata = {
   title: "Criminal Defense Attorneys Johannesburg | Bail & Trial | Mathe Rodrick Inc",
@@ -100,6 +101,12 @@ export default function CriminalDefensePage() {
             </div>
           </div>
         </section>
+
+        {/* Mid-page image band — replace with a real photo when ready */}
+        <ServiceImagePlaceholder
+          suggestion="A wide landscape photo that conveys defense and protection works well here — for example an attorney advising a client, a courthouse exterior, or a serious consultation. Landscape orientation fills this band best."
+          suggestedPath="/images/criminal-defense-band.jpg"
+        />
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">

@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer"
 import Link from "next/link"
 import { ArrowRight, Scale, Shield, Briefcase } from "lucide-react"
 import { OtherServices } from "@/components/other-services"
+import { ServiceImagePlaceholder } from "@/components/service-image-placeholder"
 
 export const metadata: Metadata = {
   title: "Property Law & Eviction Attorneys Johannesburg | Mathe Rodrick Inc",
@@ -100,6 +101,12 @@ export default function PropertyLawPage() {
             </div>
           </div>
         </section>
+
+        {/* Mid-page image band — replace with a real photo when ready */}
+        <ServiceImagePlaceholder
+          suggestion="A wide landscape photo tied to property works well here — for example a residential or commercial building, a property handover, or a client signing a lease. Landscape orientation fills this band best."
+          suggestedPath="/images/property-law-band.jpg"
+        />
 
         {/* Key Areas of Focus */}
         <section className="border-b border-foreground">
