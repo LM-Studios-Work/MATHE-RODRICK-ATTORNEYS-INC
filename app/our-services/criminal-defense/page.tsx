@@ -103,11 +103,11 @@ export default function CriminalDefensePage() {
         </section>
 
         {/* Mid-page image band */}
-        <section className="border-b border-foreground">
+        <section className="border-b border-foreground overflow-hidden">
           <img
             src="/service%20page%20placeholders/criminal%20law%20placeholder.webp"
             alt="Criminal defense representation"
-            className="aspect-square w-full object-cover brightness-95 md:object-top md:aspect-auto md:h-[500px]"
+            className="aspect-square w-full object-cover origin-[5%_9%] scale-[1.75] brightness-95 md:scale-100 md:origin-center md:object-top md:aspect-auto md:h-[500px]"
           />
         </section>
 
