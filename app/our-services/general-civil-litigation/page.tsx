@@ -105,9 +105,9 @@ export default function GeneralCivilLitigationPage() {
         {/* Mid-page image band */}
         <section className="border-b border-foreground overflow-hidden">
           <img
-            src="/service%20page%20placeholders/case%20file%20desk%20general%20civil%20litigation.webp"
+            src="/service%20page%20placeholders/new%20civil%20litigation%20image.jpeg"
             alt="General civil litigation case files"
-            className="aspect-square w-full object-cover origin-[5%_9%] scale-[1.75] brightness-95 md:scale-100 md:origin-center md:object-top md:aspect-auto md:h-[500px]"
+            className="aspect-square w-full object-cover origin-[50%_96%] scale-[1.25] brightness-95 md:scale-100 md:origin-center md:object-[50%_96%] md:aspect-auto md:h-[500px]"
           />
         </section>
 

@@ -7,7 +7,7 @@ export function AboutSection() {
     <section className="border-b-2 border-border-subtle">
       <div className="grid w-full gap-12 items-center px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
         <div className="lg:col-span-4">
-          <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Firm</p>
+          <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Who Are We</p>
           <div className="mt-6 w-full aspect-square relative overflow-hidden border border-border/40">
             <Image
               src="/images/About page hero.webp"
@@ -25,12 +25,15 @@ export function AboutSection() {
           </h1>
           <div className="space-y-6 text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
             <p>
-              Mathe Rodrick Attorneys Inc is a full service law firm serving clients throughout Gauteng. We are built on a simple conviction: every client deserves representation that honours their humanity.
+              Mathe Rodrick Attorneys Inc is a boutique law firm located in Johannesburg that prides itself in rendering ethical and competent legal services on a variety of legal issues.
             </p>
             <p>
               From complex litigation to sensitive personal matters, our attorneys tailor their approach to the
               people we serve. We listen carefully, advise honestly, and pursue outcomes that protect both your
               interests and your dignity.
+            </p>
+            <p>
+              Our area of expertise entails dealing with complex legal issues ranging from the corporate commercial space, as well as sensitive matters of family law and criminal matters.
             </p>
           </div>
 

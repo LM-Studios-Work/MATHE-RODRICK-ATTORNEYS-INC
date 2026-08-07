@@ -18,17 +18,13 @@ export function ServicesSection() {
       {/* Header — matches About / Callback sections exactly */}
       <div className="grid w-full gap-12 px-5 py-20 lg:grid-cols-12 md:px-8 md:py-28">
         <div className="lg:col-span-4">
-          <p className="text-sm font-bold uppercase tracking-widest text-muted-foreground">Our Expertise</p>
-          <h2 className="mt-4 text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
+          <h2 className="text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-normal uppercase leading-tight tracking-normal break-words">
             Explore Our Expertise
           </h2>
         </div>
         <div className="flex items-center lg:col-span-8">
           <p className="text-base font-normal leading-relaxed text-muted-foreground md:text-lg">
-            With years of experience and a proven track record within the South African courts, we are committed to
-            providing exceptional legal solutions to individuals and businesses across Gauteng. These principles shape
-            every solution we provide, ensuring you receive the highest level of legal support grounded in integrity,
-            results, and passion.
+            Based on our commitment to fair and equitable resolution of all our clients' legal issues, we pledge to consistently deliver tailor-made, ethical, and competent legal solutions.
           </p>
         </div>
       </div>

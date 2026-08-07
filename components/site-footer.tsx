@@ -35,11 +35,8 @@ export function SiteFooter() {
                 <span className="text-[0.6rem] font-bold tracking-[0.4em] text-muted-foreground">ATTORNEYS INC</span>
               </div>
             </div>
-            <p className="mt-6 max-w-sm text-sm font-light leading-relaxed text-muted-foreground">
-              Customised legal services driven by pure respect for human dignity and centred around ethical
-              legal practices.
-            </p>
-            <div className="mt-8">
+
+            <div className="mt-6">
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.3em] text-muted-foreground">
                 See us on our socials
               </p>
